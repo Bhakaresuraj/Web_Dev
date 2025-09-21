@@ -1,0 +1,14 @@
+body {
+    background-color: lightgrey;
+}
+div {
+    color:rgba(0,10, 128,0.8);
+
+}
+
+h1{
+    font-size: 70px;
+    font-style: oblique;
+    font-variant: small-caps;
+    font-weight: 400;
+}
