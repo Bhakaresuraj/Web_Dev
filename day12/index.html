@@ -6,54 +6,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        html {
-            margin: 0;
-            padding: 0;
-        }
-        div {
-            border: 2px solid black;
-            margin: 10px;
-            padding: 10px;
-            padding-left: 40px;
-            /* text-align: center; */
-
-        }
-        .container {
-            /* border: 2px solid red; */
-            background-color: lightgrey;
-
-            height: fit-content;
-            width: 80vh;
-            height: 50vh;
-            margin: auto;
+        /* * { */
+        /* padding: 0px;
+            margin: 0px;
+            */
+        .box {
+            background-color: yellow;
+            border: 1px solid black;
+            display: inline-block;
+            /* margin: 0px; */
+            margin: 20px;
+            padding: 20px;
+            width: 100px;
+            height: 3%;
         }
 
+        .box1 {
+            background-color: lightgreen;
+            /* display: none   ; */
+            /* display:inline-block; */
+            display: flex;
+            /* visibility: hidden; */
+            justify-content: center;
+            /* display:grid; */
+        }
     </style>
 </head>
 
 <body>
+    <nav class="box1">
+        <ul>
+            <li>home</li>
+            <li>about</li>
+            <li>contact</li>
+            <li>blog</li>
+            <li>services</li>
+            <li>products</li>
+        </ul>
+    </nav>
 
-    <div>
-        <p>this is a header </p>
+    <div class="box">
+
+        this is a box
 
     </div>
+    <div class="box box1">
 
-    <!-- knvijun -->
-    <div class="container   ">
-        <p>this is a main Container</p>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates blanditiis quia atque doloremque
-            praesentium labore harum rem in, molestiae quae dolore? Facere tenetur nemo et! Animi facilis nisi unde
-            fugit deserunt laudantium vel recusandae excepturi quae dignissimos? Saepe adipisci, deserunt, consequuntur
-            provident iusto magnam autem amet, nesciunt libero unde vitae laudantium quidem nemo rerum nulla quod?</p>
+        this is a box
     </div>
-    <!-- nreneuiehiere -->
-    <div>
-        <p>
-            this is a footer
-        </p>
-    </div>
-
-
+    <span class="box1">
+        this is a footer
+    </span>
 </body>
 
 </html>
