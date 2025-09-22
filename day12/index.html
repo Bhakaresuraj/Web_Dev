@@ -21,27 +21,47 @@
             height: 3%;
         }
 
+        .list {
+            /* list-style-image: url(''); */
+            display: flex;
+            gap: 30px;
+            font-size: larger;
+            font-weight: bolder;
+            color: blue;
+            list-style: none;
+            padding-top: 10px;
+            /* list-style-type: symbols('✔️'); */
+            /* text-transform: uppercase; */
+              /* align-items: center; */
+            /* flex-wrap: wrap;  */
+        }
+
         .box1 {
+
             background-color: lightgreen;
             /* display: none   ; */
             /* display:inline-block; */
             display: flex;
+            
             /* visibility: hidden; */
-            justify-content: center;
+            justify-content: end;
+            padding-right: 100px
+    
             /* display:grid; */
         }
+
         .shadow {
             outline: 3px solid rgb(23, 81, 207);
             outline-offset: 2px;
-            box-shadow:  5px 4px 5px rgb(157, 152, 230);
-            text-shadow:  3px 6px 3px rgb(0, 0, 0);
+            box-shadow: 5px 4px 5px rgb(157, 152, 230);
+            text-shadow: 3px 6px 3px rgb(0, 0, 0);
         }
     </style>
 </head>
 
 <body>
     <nav class="box1">
-        <ul>
+        <ul class="list">
             <li>home</li>
             <li>about</li>
             <li>contact</li>
