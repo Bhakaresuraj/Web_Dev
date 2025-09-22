@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sizing & units in CSS</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* html { */
+        /* font-size: 10px; */
+        /* } */
+
+        .box {
+            border: 2px solid black;
+            box-sizing: border-box;
+            background-color: lightblue;
+            width: 80vw;
+            height: 10vh;
+            /* margin-top: 30px; */
+            text-align: center;
+            margin: auto;
+        }
+
+        .Container {
+            border: 2px solid black;
+            box-sizing: border-box;
+            background-color: lightblue;
+            width: 80vw;
+            color: black;
+            /* height: 80vh; */
+            min-height: 80vh;
+            font-size: 16px;
+            margin: 10px auto;
+
+        }
+
+        .Container>div {
+            height: 50%;
+            width: 50%;
+            border: 2px solid red;
+            font-size: 2em;
+
+        }
+
+        .Container>div>p {
+            height: 50%;
+            width: 50%;
+            border: 2px solid green;
+
+        }
+
+        .footer {
+            text-align: center;
+            height: 10vh;
+            border: 2px solid black;
+            box-sizing: border-box;
+            background-color: lightblue;
+            width: 80vw;
+            height: 10vh;
+
+            margin: 10px auto;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="box">
+        <p>This is a Box .</p>
+    </div>
+
+    <div class="Container">
+        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis deleniti at laboriosam, unde accusamus
+            consectetur officiis dolores voluptate incidunt numquam placeat officia fugiat maiores ipsum nisi natus,
+            consequatur, iure molestias dignissimos quasi. Id eius neque veritatis tenetur consectetur laudantium
+            voluptate harum nisi? A officiis corporis nam cupiditate eligendi. Mollitia laboriosam repellendus sunt
+            rerum sapiente cupiditate et eius possimus? Recusandae pariatur atque perferendis officia enim veniam
+            reprehenderit, doloremque nihil fugit provident, asperiores impedit iste molestias, minus quis! Cupiditate,
+            enim.
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Id sit inventore odio illo repellendus ad quo
+                error laborum placeat doloribus unde maiores, rem rerum tempore nobis similique officia pariatur culpa.
+            </p>
+        </div>
+
+    </div>
+
+    <div class="footer">
+        <p>this is a footer </p>
+    </div>
+</body>
+
+
+</html>
