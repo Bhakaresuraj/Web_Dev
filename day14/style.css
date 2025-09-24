@@ -1,0 +1,38 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+    --color :blue;
+}
+
+.nav {
+    background-color: var(--color ,);
+    margin: 1px;
+    position: relative;
+    position: sticky;
+    top:0px;
+
+}
+ul {
+    display: flex;
+    opacity: 0.5;
+
+}
+ul li:first-child{
+    background-color: orange;
+}
+li {
+    border: 2px solid black;
+    border-radius:  13px;
+    list-style: none;
+    margin: 10px;
+    /* list-style: none; */
+    background-color: aquamarine;
+    padding: 5px;
+}
+div p:nth-child(2) {
+    background-color: var(--color , yellow);
+
+}
