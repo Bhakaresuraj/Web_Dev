@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors .</title>
+    <style>
+        .boxes {
+            border: 3px solid black;
+            /* background-color: aquamarine; */
+
+        }
+      ::selection{
+            color: white;
+            background-color: purple;
+        }
+
+        .boxes::first-line {
+            color: purple;
+        }
+
+        .box {
+            border: 3px solid black;
+            margin: 3px;
+        }
+
+        [data-color="primary"] {
+            color: green;
+        }
+
+        .box:nth-child(odd) {
+            background-color: gray;
+        }
+
+        .boxes::before {
+           content: "Suraj Bhakare";
+           background-color: gray;
+           color: white;
+        }
+        .boxes::after {
+        
+           content: "Suraj Bhakare";
+           background-color: gray;
+           color: white;
+        }
+        .box::first-letter{
+            font-size:x-large;
+            color: white;
+            background-color: purple;
+        }
+        .nav{
+            margin: 10px 10px 10px 10px;
+            background-color: red;
+            height: 50px;
+            padding: 10px 10px 10px 10px;
+        }
+        input::placeholder{
+            color: orangered;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <input type="this is the search bar " placeholder="enter here .">
+    </div>
+    <div class="boxes">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, iusto! Atque cum non, ab saepe dolores
+            eos, veniam porro illo fugiat unde molestiae libero. Sequi aliquid fugiat, corrupti debitis nemo dolorum
+            iusto, nobis a suscipit ullam in dolore? Corporis a hic vero alias atque sit quas! Quam impedit repellendus
+            amet deleniti doloribus aspernatur ratione pariatur, placeat libero fugiat sequi eaque quos id nostrum
+            repudiandae maiores corrupti a necessitatibus. Sint debitis neque omnis laudantium ut voluptatibus voluptas
+            sed minus ullam deserunt consectetur, enim totam provident soluta fugiat distinctio dolorem dolor
+            accusantium. Itaque veniam rerum porro quod, laborum sunt eius placeat magni.
+        </p>
+        <div data-color="primary" class="box">this is 1 box</div>
+        <div class="box">this is 2 box</div>
+        <div class="box">this is 3 box</div>
+        <div class="box">this is 4 box</div>
+    </div>
+</body>
+
+</html>
