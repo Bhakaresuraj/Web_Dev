@@ -1,0 +1,38 @@
+* {
+            margin: 0;
+            padding: 0px;
+        }
+
+        .nav {
+            margin-top: 40px;
+            display: flex;
+            height: 90px;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .nav img {
+            width: auto;
+            /* height: 50px; */
+        }
+
+        .nav ul {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+            justify-content: center;
+        }
+
+        .nav ul li {
+            display: flex;
+            align-content: center;
+
+        }
+        .nav ul li img{
+            height: 17px;
+        }
+
+        .logo {
+            /* margin-left: 10px; */
+            height: 40px;
+        }
