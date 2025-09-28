@@ -8,75 +8,61 @@
     <style>
         * {
             margin: 0;
-            padding: 0;
+            padding: 0px;
         }
 
         .nav {
-            width: 90%;
-            margin: auto;
-            background-color: white;
-            height: 80px;
+            margin-top: 40px;
             display: flex;
-            /* text-align: flex-end; */
-            align-items: center;
-            /* padding: 10px; */
+            height: 90px;
             justify-content: space-around;
-
-        }
-
-
-        .nav ul {
-                margin: 0px 100px 0px 100px;
-            display: flex;
-            list-style: none;
-            /* justify-content: center; */
-            gap: 30px;
-
-
-        }
-       
-       
-        .nav button {
-            font-size: larger;
-                margin: 10px 100px 10px 10px;
-            height: 40px;
-            width: 120px;
-            text-align: center;
-            border: 2px solid black;
+            align-items: center;
         }
 
         .nav img {
-            margin: 10px  10px 10px 73PX;
+            width: auto;
+            /* height: 50px; */
         }
-        .nav a :nth-child(2){
-            margin: 100px 100px 10px 10px;
+
+        .nav ul {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+            justify-content: center;
+        }
+
+        .nav ul li {
+            display: flex;
+            align-content: center;
+
+        }
+        .nav ul li img{
+            height: 17px;
+        }
+
+        .logo {
+            /* margin-left: 10px; */
+            height: 40px;
         }
     </style>
+
 </head>
 
 <body>
-
     <header>
-        <div class="nav">
-            <a href=""><img
-                    src="../data/images/Frame-1-2.png " alt="Logo"></a>
-
+        <nav class="nav">
+            <img src="../data/images/Frame-1-2.png" alt="logo">
             <ul>
-                <a href="">
-                    <li>Product </li></a>
-                <a href="">
-                    <li>Pricing</li>
-                </a>
-                <a href="">
-                    <li>Resources</li>
-                </a>
-                <a href="">
-                    <li>Our Company</li>
-                </a>
+                <li><span>Products </span>  <img src="../data/svg_images/arrow-down-01-stroke-rounded.svg" alt=""></li>
+
+                <li><span>Pricing </span> <img src="../data/svg_images/arrow-down-01-stroke-rounded.svg" alt=""> </li>
+                <li><span>resources </span> <img src="../data/svg_images/arrow-down-01-stroke-rounded.svg" alt=""></li>
+                <li><span>Our Company </span> <img src="../data/svg_images/arrow-down-01-stroke-rounded.svg" alt="">
+                </li>
+                <li><img class="logo" src="../data/images/language.jpeg" alt=""></li>
             </ul>
-         <button>Download</button>
-        <a href="">English</a>
-        </div>
+
+        </nav>
     </header>
 </body>
 
