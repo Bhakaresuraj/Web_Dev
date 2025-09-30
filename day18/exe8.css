@@ -1,0 +1,26 @@
+ .container {
+     height: 70vh;
+     display: flex;
+     align-items: end;
+     width: 60vw;
+     background-color: aquamarine;
+ }
+
+ .ball {
+     height: 100PX;
+     width: 100px;
+     background-color: white;
+     border-radius: 150PX;
+     animation: bouncoing_ball 4s cubic-bezier(0.01, 0.76, 1, 0.34) 1s 2 forwards;
+ }
+
+ @keyframes bouncoing_ball {
+     from {}
+
+     to {
+
+         transform: translateX(500px) translateY(-350px);
+
+     }
+
+ }
