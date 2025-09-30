@@ -1,46 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Transform Property in css</title>
     <style>
+        .container {
 
-        .container{
-            
             background-color: aqua;
             height: 50vh;
-            margin: auto;
-            width:50vw;
-            
+            width: 50vw;
+
         }
 
-        .box{
+        .box {
             background-color: blue;
             height: 30px;
             width: 150px;
-            animation: animation 1s cubic-bezier(0, 1.43, 1,-0.68) 1s 3;
+            animation: animation 4s linear 1s 3;
             /* transition-property: all;
             transition-duration:3s;
             transition-timing-function: cubic-bezier(0, 2.31, 1,-1.69);
             transition-delay: 1s; */
         }
 
-       @keyframes animation {
-            from   {
-
+        @keyframes animation {
+            from {
+                background-color:blue;
             }
-            to{
+
+            to {
+                background-color: white;
                 transform: translateX(70%) translateY(150%);
             }
-       }
-
+        }
     </style>
 </head>
+
 <body>
 
     <div class="container">
         <div class="box tar">This is inside box</div>
     </div>
 </body>
+
 </html>
