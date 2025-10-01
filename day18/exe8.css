@@ -2,25 +2,60 @@
      height: 70vh;
      display: flex;
      align-items: end;
-     width: 60vw;
+     position: relative;
+     width: 70vw;
      background-color: aquamarine;
  }
 
  .ball {
-     height: 100PX;
-     width: 100px;
+     height: 50PX;
+     width: 50px;
+     position: relative;
      background-color: white;
      border-radius: 150PX;
-     animation: bouncoing_ball 4s cubic-bezier(0.01, 0.76, 1, 0.34) 1s 2 forwards;
+     animation: bouncoing_ball 10s linear 1 forwards;
+
  }
 
  @keyframes bouncoing_ball {
-     from {}
+     0% {
+         transform: translateX(0px) translate(0px);
+     }
 
-     to {
+     12.5% {
+         transform: translateX(70px) translateY(-100px);
 
-         transform: translateX(500px) translateY(-350px);
+     }
 
+     25% {
+         transform: translateX(200px) translateY(-200px);
+     }
+
+     37.5% {
+         transform: translateX(300px) translateY(-100px);
+
+     }
+
+     50% {
+         transform: translateX(400px) translateY(0px);
+     }
+
+     62.5% {
+         transform: translateX(500px) translateY(-100px);
+
+     }
+
+     75% {
+         transform: translateX(600px) translateY(-200px);
+     }
+
+     87.5% {
+         transform: translateX(700px) translateY(-100px);
+
+     }
+
+     100% {
+         transform: translateX(800px) translateY(0px);
      }
 
  }
