@@ -13,11 +13,26 @@
      position: relative;
      background-color: white;
      border-radius: 150PX;
-     animation: bouncoing_ball 10s linear 1 forwards;
+     animation: animatex 3s linear infinite , animatey 1s ease-out  infinite alternate ;
 
  }
+@keyframes animatex {
+    from{
+        left: 0%;
+    }to{
+        left: 90%;
+    }
+}
+@keyframes animatey {
+    from{
+        bottom: 0%;
+    }
+    to{
+        bottom:90%;
+    }
+}
 
- @keyframes bouncoing_ball {
+ /* @keyframes bouncoing_ball {
      0% {
          transform: translateX(0px) translate(0px);
      }
@@ -58,4 +73,4 @@
          transform: translateX(800px) translateY(0px);
      }
 
- }
+ } */

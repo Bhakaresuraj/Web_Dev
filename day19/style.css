@@ -1,0 +1,15 @@
+.container{
+    border: 2px solid black;
+    height: 400px;
+    width: 400px;
+    background-color: white;
+    /* object-fit: fill; */
+}
+*{
+    background-color: blueviolet;
+}
+.container img{
+    height:400px;
+    width: 400px;
+    object-fit: fill;    
+}
