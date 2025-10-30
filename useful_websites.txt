@@ -1,2 +1,2 @@
 icons : https://hugeicons.com/icons
-Font size checking : whatfont extension
+Font size checking : whatfont extension in chrome
