@@ -6,4 +6,10 @@ button{
     border:none;
     border-radius:5px;
     cursor:pointer;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    &:hover {
+        background-color: darkcyan;
+    }
+
 }
