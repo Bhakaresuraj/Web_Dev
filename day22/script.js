@@ -13,6 +13,7 @@ for(let obj in object){
 }
 
 // for of loop .............
+
 for(variable  of "name" ){
 
     console.log(variable);
