@@ -1,16 +1,8 @@
-let i=1,j=1;
-while(i<5){
-    j=1;    
-    while(j<4){
-        if(i==3){
-            console.log("i is 3, breaking inner loop");
-            break;
-        }
-        console.log("Inner loop j:", j);
-        j++;
+
+let heros=[["suraj","Yash","Sudar"],["sahil","Vijay","Anuj"]]
+for(hero in heros){
+    console.log("Heros in array "+heros[hero]);
+    for(name in heros[hero]){
+        console.log("Name: "+heros[hero][name]);
     }
-    // console.log("Outer loop i:", i);
-    i++;
 }
-
-
