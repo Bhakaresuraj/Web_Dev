@@ -28,7 +28,9 @@
 // }
 
 
-// Qs1.WriteaJSprogramtodeletealloccurrencesofelement‘num’inagivenarray.Example:ifarr=[1,2,3,4,5,6,2,3]&num=2Resultshouldbearr=[1,3,4,5,6,3]
+/*
+
+Qs1.WriteaJSprogramtodeletealloccurrencesofelement‘num’inagivenarray.Example:ifarr=[1,2,3,4,5,6,2,3]&num=2Resultshouldbearr=[1,3,4,5,6,3]
 
 let arr=[1,2,3,4,5,6,2,3]
 let num=prompt("Enter the number :");
@@ -44,3 +46,30 @@ for(let i=0;i<arr.length;i++){
 for(i of arr){
     console.log(i);
 }
+
+
+*/
+/*
+WriteaJSprogramtofindthenoofdigitsinanumber.
+
+let num = prompt("Enter the number :");
+let count=0;
+let temp=num;
+while(num>=1){
+    num=num/10;
+    count++;
+}
+console.log(`The digits in ${temp} is ${count} .`);
+*/
+
+
+// WriteaJSprogramtofindthesumofdigitsinanumber
+
+let num = prompt("Enter the number :");
+let count=1;
+let temp=num;
+while(num > 0){
+    count*=num;
+    num--;
+}
+console.log(`The Factorial of  ${temp} is ${count} .`);
