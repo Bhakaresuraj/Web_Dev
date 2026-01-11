@@ -1,12 +1,7 @@
-let arr=[6,7,5,96,3];
-console.log(...arr);
-
-// let ans= arr.every((el)=>(el%10==0));
-// console.log(ans);
-console.log(arr.reduce((ans,el)=>{
-    if(ans>el){
-        return el;
-    }else{
-        return ans;
-    }
-}))
+const k=10;
+// k=40
+console.log(k);
+for(var i=0;i<5;i++){
+    var ll=i;
+}
+console.log(ll);
