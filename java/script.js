@@ -1,12 +1,7 @@
-const stud={
-    name:"suraj",
-    age :21,
-    gender: "male",
-    funct() {
-        console.log(this);
-    },
-    k:() => {
-        console.log(this);
-    }
-    
+let smallImg = document.getElementsByClassName("oldImg");
+for (k of smallImg) {
+    console.dir(` img link " ${k.src} "change to  " http://127.0.0.1:5500/java/assets/spiderman_img.png "B`);
+    k.src = "http://127.0.0.1:5500/java/assets/spiderman_img.png"
+
 }
+
