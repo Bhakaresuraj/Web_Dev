@@ -20,4 +20,13 @@
 
 // let h4 = document.querySelector('h4');
 
-let img=document.querySelector("img");
+// let img=document.querySelector("img");
+
+let btn=document.createElement('button');
+btn.style.backgroundColor="red";
+
+let para=document.querySelector('p');
+para.insertAdjacentElement("afterbegin",btn);
+para.insertAdjacentElement("beforebegin",btn);
+para.insertAdjacentElement("beforeend",btn);
+para.insertAdjacentElement("afterend",btn);
