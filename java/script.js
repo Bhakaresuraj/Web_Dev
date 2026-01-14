@@ -15,5 +15,9 @@
 
 
 
-let img= document.querySelector("img");
-console.dir(img.classList);
+// let img= document.querySelector("img");
+// console.dir(img.classList);
+
+// let h4 = document.querySelector('h4');
+
+let img=document.querySelector("img");
