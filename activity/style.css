@@ -1,0 +1,19 @@
+body{
+    display: flex;
+    align-items: center; 
+    flex-direction: column;
+    gap: 30px;
+
+}
+.div{
+       display: flex;
+    align-content: center;
+    justify-items: center;
+    border: 1px solid black;
+    height: 200px;
+    width: 500px;
+    justify-content: center;
+    align-items: center;
+    /* color: rgb(200,40,61); */
+
+}
