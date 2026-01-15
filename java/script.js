@@ -1,11 +1,5 @@
-let btn=document.querySelectorAll("button");
-for(button of btn){
-
-    button.addEventListener("mouseenter",()=>{
-        console.log("hello Suraj ...!");
-    })
-    button.addEventListener("click",()=>{
-        button.style.backgroundcolor="red";
-    })
-
+let div=document.querySelector(".div");
+div.addEventListener("mouseenter",fun);
+function fun(){
+    console.log("Cursor is on the box");
 }
