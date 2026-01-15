@@ -1,5 +1,15 @@
-let div=document.querySelector(".div");
-div.addEventListener("mouseenter",fun);
-function fun(){
-    console.log("Cursor is on the box");
+let btn = document.querySelectorAll("button");
+for(el of btn){
+    el.addEventListener("mouseenter",function (e){
+        this.style.backgroundColor="red";
+        console.log(el.innerText);
+        console.log(e);
+
+    })
+    el.addEventListener("pointerout",function (e){
+        console.log(e);
+        this.style.backgroundColor="grey";
+        console.warn("Mouse moved");
+    })
 }
+
