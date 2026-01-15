@@ -1,17 +1,10 @@
-let inp = document.querySelector("input");
-let p= document.querySelector("p");
-let h1= document.querySelector("h1");
-h1.addEventListener("mouseout",function(){
-    console.log("mouse out");
-})
+let input = document.querySelector("input");
+let h2 = document.querySelector("h2");
 
-let str;
-inp.addEventListener("input",function(){
-     str=this.value;
-     p.innerText=str;
-})
-inp.addEventListener("keypress",function(){
-    console.log("changed");
-    console.log("final value :"+this.value);
+input.addEventListener("input", function () {
+    let filteredValue = input.value.replace(/[^a-zA-Z ]/g, "");
 
-})
+    // update input and heading
+    input.value = filteredValue;
+    h2.innerText = filteredValue;
+});
