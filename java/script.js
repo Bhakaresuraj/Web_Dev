@@ -1,12 +1,23 @@
-function one(){
-    return 1;
-}
-function two(){
-    return one()+one();
-}
-function three(){
-    let ans=two()+one();
-    console.log(ans);
+let h1 = document.querySelector("h1");
+
+function changeCol(color, delay, nextcolor) {
+    setInterval(
+
+        () => {
+            h1.style.color = color;
+            if(nextcolor) nextcolor();
+        }, delay)
 }
 
-three();
+changeCol("red", 1000, () => {
+    changeCol("blue", 1000, () => {
+        changeCol("green", 1000, () => {
+            changeCol("pink", 1000, () => {
+                changeCol("brown", 1000, () => {
+                    changeCol("yellow", 1000);
+                });
+            });
+        });
+    });
+});
+
