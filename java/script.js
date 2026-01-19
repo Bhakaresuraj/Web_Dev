@@ -1,23 +1,31 @@
-let h1 = document.querySelector("h1");
-
-function changeCol(color, delay, nextcolor) {
-    setTimeout(
-
-        () => {
-            h1.style.color = color;
-            if(nextcolor) nextcolor();
-        }, delay)
+function savedata(data, success, failure) {
+    let speed = Math.floor(Math.random() * 10) + 1;
+    if (speed >= 4) {
+        success(data);
+    } else {
+        failure(data);
+    }
 }
-
-changeCol("red", 1000, () => {
-    changeCol("blue", 1000, () => {
-        changeCol("green", 1000, () => {
-            changeCol("pink", 1000, () => {
-                changeCol("brown", 1000, () => {
-                    changeCol("yellow", 1000);
-                });
-            });
-        });
-    });
-});
+savedata("abc",
+    (Data) => {
+        console.log(` ${Data} is saved successfully 1.`);
+        savedata("apana college",
+            (data) => {
+                console.log(`${data} is saved successfully 2.`);
+                savedata("tupana college",
+                    (data) => {
+                        console.log(`${data} is saved successfully 3.`)
+                    },
+                    (data) => {
+                        console.log(`Weak connection . ${data} is not  saved.`)
+                    }
+                )
+            },
+            (data) => {
+                console.log(`Weak connection . ${data} is not  saved.`)
+            })
+    },
+    (Data) => {
+        console.log(`weak connection : ${Data} is not saved`);
+    })
 
