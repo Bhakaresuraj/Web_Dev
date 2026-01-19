@@ -1,7 +1,7 @@
 let h1 = document.querySelector("h1");
 
 function changeCol(color, delay, nextcolor) {
-    setInterval(
+    setTimeout(
 
         () => {
             h1.style.color = color;
