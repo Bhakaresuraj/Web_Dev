@@ -34,7 +34,7 @@
 
 
 
-// let h1 = document.querySelector("h1");
+let h1 = document.querySelector("h1");
 
 // function changeCol(col, delay) {
 //     return new Promise((resolve, reject) => {
@@ -80,15 +80,71 @@
 
 
 
-async function greet() {
-    throw "lazy boy";
-    return "hello !";
-}
-let demo =async ()=> ("demo");
+// async function greet() {
+//     throw "lazy boy";
+//     return "hello !";
+// }
+// let demo =async ()=> ("demo");
 
-greet().then((result) => {
-    console.log("success",result);
-})
-.catch((err)=>{
-    console.log("failure",err)
-})
+// greet().then((result) => {
+//     console.log("success",result);
+// })
+// .catch((err)=>{
+//     console.log("failure",err)
+// })
+
+
+
+
+// function changeCol(col, delay) {
+//     return new Promise((resolve, reject) => {
+//         setTimeout(() => {
+//             let ran = Math.floor(Math.random() * 5);
+//             if (ran > 3) {
+//                 reject("error occur");
+//             }
+//             h1.style.color = col;
+//             console.log("color change to ", col);
+//             resolve("color change to ", col);
+//         }, 1000);
+//     });
+// }
+
+
+// async function coloname() {
+//     try {
+//         await changeCol("red")
+//         await changeCol("purple")
+//         await changeCol("yellow")
+//         await changeCol("brown")
+//         await changeCol("pink")
+//         await changeCol("blue")
+//     }catch(err){
+//         console.log("Error :    ",err);
+//     }
+
+//     let k = 10;
+//     console.log(k);
+// }
+
+// coloname();
+
+
+let JSONdata = {
+    "current_page": 1,
+    "first_page_url": "https://catfact.ninja/facts?page=1",
+    "from": 1,
+    "last_page": 34,
+    "last_page_url": "https://catfact.ninja/facts?page=34",
+            
+    "next_page_url": "https://catfact.ninja/facts?page=2",
+    "path": "https://catfact.ninja/facts",
+    "per_page": 10,
+    "prev_page_url": null,
+    "to": 10,
+    "total": 332
+};
+
+JSONdata=JSON.stringify(JSONdata);
+
+console.log(JSONdata)
