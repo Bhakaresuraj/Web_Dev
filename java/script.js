@@ -34,43 +34,61 @@
 
 
 
-let h1 = document.querySelector("h1");
+// let h1 = document.querySelector("h1");
 
-function changeCol(col, delay) {
-    return new Promise((resolve, reject) => {
-        setTimeout(() => {
-            h1.style.color = col;
-            resolve();
-        }, 1500);
-    })
+// function changeCol(col, delay) {
+//     return new Promise((resolve, reject) => {
+//         setTimeout(() => {
+//             h1.style.color = col;
+//             resolve();
+//         }, 1500);
+//     })
+// }
+
+
+// changeCol("red", 1500)
+//     .then(() => {
+//         console.log("color change to red.");
+//         return changeCol("orange", 1000)
+//     })
+//     .then(() => {
+//         console.log("color change to orange.");
+//         return changeCol("blue", 1000)
+//     })
+//     .then(() => {
+//         console.log("color change to blue.");
+//         return changeCol("yellow", 1000)
+//     })
+//     .then(() => {
+//         console.log("color change to yellow.");
+//         return changeCol("pink", 1000);
+//     })
+//     .then(() => {
+//         console.log("color change to pink.");
+//         return changeCol("brown", 1000);
+//     })
+//     .then(() => {
+//         console.log("color change to brown.");
+//         // return changeCol("orange", 1000);
+//     })
+//     .catch(() => {
+//         console.log("color not change .");
+//     })
+
+
+
+
+
+
+async function greet() {
+    throw "lazy boy";
+    return "hello !";
 }
+let demo =async ()=> ("demo");
 
-
-changeCol("red", 1500)
-    .then(() => {
-        console.log("color change to red.");
-        return changeCol("orange", 1000)
-    })
-    .then(() => {
-        console.log("color change to orange.");
-        return changeCol("blue", 1000)
-    })
-    .then(() => {
-        console.log("color change to blue.");
-        return changeCol("yellow", 1000)
-    })
-    .then(() => {
-        console.log("color change to yellow.");
-        return changeCol("pink", 1000);
-    })
-    .then(() => {
-        console.log("color change to pink.");
-        return changeCol("brown", 1000);
-    })
-    .then(() => {
-        console.log("color change to brown.");
-        // return changeCol("orange", 1000);
-    })
-    .catch(() => {
-        console.log("color not change .");
-    })
+greet().then((result) => {
+    console.log("success",result);
+})
+.catch((err)=>{
+    console.log("failure",err)
+})
