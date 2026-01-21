@@ -34,7 +34,7 @@
 
 
 
-let h1 = document.querySelector("h1");
+// let h1 = document.querySelector("h1");
 
 // function changeCol(col, delay) {
 //     return new Promise((resolve, reject) => {
@@ -130,21 +130,114 @@ let h1 = document.querySelector("h1");
 // coloname();
 
 
-let JSONdata = {
-    "current_page": 1,
-    "first_page_url": "https://catfact.ninja/facts?page=1",
-    "from": 1,
-    "last_page": 34,
-    "last_page_url": "https://catfact.ninja/facts?page=34",
-            
-    "next_page_url": "https://catfact.ninja/facts?page=2",
-    "path": "https://catfact.ninja/facts",
-    "per_page": 10,
-    "prev_page_url": null,
-    "to": 10,
-    "total": 332
-};
+// let JSONdata = {
+//     "current_page": 1,
+//     "first_page_url": "https://catfact.ninja/facts?page=1",
+//     "from": 1,
+//     "last_page": 34,
+//     "last_page_url": "https://catfact.ninja/facts?page=34",
 
-JSONdata=JSON.stringify(JSONdata);
+//     "next_page_url": "https://catfact.ninja/facts?page=2",
+//     "path": "https://catfact.ninja/facts",
+//     "per_page": 10,
+//     "prev_page_url": null,
+//     "to": 10,
+//     "total": 332
+// };
 
-console.log(JSONdata)
+// JSONdata=JSON.stringify(JSONdata);
+
+// console.log(JSONdata)
+
+
+
+let h1 = document.querySelector("h1");
+function extraction(url, delay, count, color) {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            fetch(url, {
+                headers: {
+                    "Accept": "application/json"
+                }
+            }).then((response) => {
+                console.log(`response ${count}:`);
+                return response.json();
+            })
+                .then((data) => {
+                    let color1 = Math.floor(Math.random() * 255), color2 = Math.floor(Math.random() * 255), color3 = Math.floor(Math.random() * 255);;
+                    console.log(data.fact);
+                    h1.style.color = `rgb(${color1},${color1},${color1})`;
+                    resolve();
+                })
+                .catch((err) => {
+                    console.log(err);
+                })
+        }, delay);
+    })
+}
+
+async function data() {
+    let color = "red"
+    let delay = 3000, count = 1, url = "https://catfact.ninja/fact";
+    await extraction(url, delay, count, color);
+    count++;
+    await extraction(url, delay, count, color);
+    count++;
+    await extraction(url, delay, count, color);
+    count++;
+    await extraction(url, delay, count, color);
+    count++;
+    await extraction(url, delay, count, color);
+}
+
+data();
+
+//     .then((response) => {
+//         console.log("response 1     :");
+//         return response.json();
+//     })
+//     .then((data) => {
+//         console.log(data.joke);
+//         return fetch(url,{
+//     headers:{
+//         "Accept":"application/json"
+//     }
+// });
+//     })
+//     .then((data) => {
+//         console.log("response 2 :");
+//         return data.json();
+//     })
+//     .then((data) => {
+//         console.log(data.joke);
+
+//     })
+//     .catch((err) => {
+//         console.log(err);
+//     })
+
+
+
+
+
+
+
+
+
+
+// fetch(url)
+//     .then((response) => {
+//         console.log("1st fetch completed  .");
+//         return fetch(url);
+//     })
+//     .then((res) => {
+//         console.log("2nd fetch completed");
+//         return res.json();
+//     })
+//     .then((data)=>{
+//         console.log(data);
+//     })
+//     .catch((error) => {
+//         console.log(error);
+//     })
+
