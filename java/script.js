@@ -262,20 +262,55 @@
 // }
 
 // extraction();
+// let img=document.querySelector("img");
+// but.addEventListener("click", async () => {
+//     let url = await getdata();
+//     // p.innerText =;
+//     img.src=url;
+// })
+
+// async function getdata() {
+//     let url = "https://dog.ceo/api/breeds/image/random";
+//     let data = await axios.get(url);
+//     return data.data.message;
+// }
+// getdata();
+
+// let p=document.querySelector("p");
 
 let but = document.querySelector(".but");
-let p = document.querySelector(".fact");
-let img=document.querySelector("img");
+let list = document.querySelector(".list");
+let input = document.querySelector("input");
+let url = "http://universities.hipolabs.com/search?name=";
+
 but.addEventListener("click", async () => {
-    let url = await getdata();
-    // p.innerText =;
-    img.src=url;
+    let country = input.value;
+    let data = await getJoke(country);
+    // console.log(data[0].name);
+    show(data);
 })
 
-async function getdata() {
-    let url = "https://dog.ceo/api/breeds/image/random";
-    let data = await axios.get(url);
-    return data.data.message;
+function show(data) {
+    list.innerHTML = "";
+    for (el of data) {
+        let li = document.createElement("li");
+        li.innerText = el.name;
+        list.appendChild(li);
+    }
 }
-// getdata();
+
+async function getJoke(country) {
+    try {
+        let config = {
+            headers: {
+                "Accept": "application/json"
+            }
+        }
+        let res = await axios.get(url + country, config);
+        return res.data;
+    } catch (err) {
+        return "No clg found";
+    }
+}
+
 
