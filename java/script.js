@@ -242,25 +242,40 @@
 //     })
 
 
-async function extraction() {
-    let url = "https://catfact.ninja/fact";
-    let res = await fetch(url);
-    let data = await res.json();
-    console.log(data.fact);
+// async function extraction() {
+//     let url = "https://catfact.ninja/fact";
+//     let res = await fetch(url);
+//     let data = await res.json();
+//     console.log(data.fact);
 
-    res = await fetch(url);
-    data = await res.json();
-    console.log(data.fact);
-    
-    res = await fetch(url);
-    data = await res.json();
-    console.log(data.fact);
-    
-    res = await fetch(url);
-    data = await res.json();
-    console.log(data.fact);
+//     res = await fetch(url);
+//     data = await res.json();
+//     console.log(data.fact);
+
+//     res = await fetch(url);
+//     data = await res.json();
+//     console.log(data.fact);
+
+//     res = await fetch(url);
+//     data = await res.json();
+//     console.log(data.fact);
+// }
+
+// extraction();
+
+let but = document.querySelector(".but");
+let p = document.querySelector(".fact");
+let img=document.querySelector("img");
+but.addEventListener("click", async () => {
+    let url = await getdata();
+    // p.innerText =;
+    img.src=url;
+})
+
+async function getdata() {
+    let url = "https://dog.ceo/api/breeds/image/random";
+    let data = await axios.get(url);
+    return data.data.message;
 }
+// getdata();
 
-
-
-extraction();
