@@ -151,46 +151,46 @@
 
 
 
-let h1 = document.querySelector("h1");
-function extraction(url, delay, count, color) {
-    return new Promise((resolve, reject) => {
-        setTimeout(() => {
-            fetch(url, {
-                headers: {
-                    "Accept": "application/json"
-                }
-            }).then((response) => {
-                console.log(`response ${count}:`);
-                return response.json();
-            })
-                .then((data) => {
-                    let color1 = Math.floor(Math.random() * 255), color2 = Math.floor(Math.random() * 255), color3 = Math.floor(Math.random() * 255);;
-                    console.log(data.fact);
-                    h1.style.color = `rgb(${color1},${color1},${color1})`;
-                    resolve();
-                })
-                .catch((err) => {
-                    console.log(err);
-                })
-        }, delay);
-    })
-}
+// let h1 = document.querySelector("h1");
+// function extraction(url, delay, count, color) {
+//     return new Promise((resolve, reject) => {
+//         setTimeout(() => {
+//             fetch(url, {
+//                 headers: {
+//                     "Accept": "application/json"
+//                 }
+//             }).then((response) => {
+//                 console.log(`response ${count}:`);
+//                 return response.json();
+//             })
+//                 .then((data) => {
+//                     let color1 = Math.floor(Math.random() * 255), color2 = Math.floor(Math.random() * 255), color3 = Math.floor(Math.random() * 255);;
+//                     console.log(data.fact);
+//                     h1.style.color = `rgb(${color1},${color1},${color1})`;
+//                     resolve();
+//                 })
+//                 .catch((err) => {
+//                     console.log(err);
+//                 })
+//         }, delay);
+//     })
+// }
 
-async function data() {
-    let color = "red"
-    let delay = 3000, count = 1, url = "https://catfact.ninja/fact";
-    await extraction(url, delay, count, color);
-    count++;
-    await extraction(url, delay, count, color);
-    count++;
-    await extraction(url, delay, count, color);
-    count++;
-    await extraction(url, delay, count, color);
-    count++;
-    await extraction(url, delay, count, color);
-}
+// async function data() {
+//     let color = "red"
+//     let delay = 3000, count = 1, url = "https://catfact.ninja/fact";
+//     await extraction(url, delay, count, color);
+//     count++;
+//     await extraction(url, delay, count, color);
+//     count++;
+//     await extraction(url, delay, count, color);
+//     count++;
+//     await extraction(url, delay, count, color);
+//     count++;
+//     await extraction(url, delay, count, color);
+// }
 
-data();
+// data();
 
 //     .then((response) => {
 //         console.log("response 1     :");
@@ -241,3 +241,26 @@ data();
 //         console.log(error);
 //     })
 
+
+async function extraction() {
+    let url = "https://catfact.ninja/fact";
+    let res = await fetch(url);
+    let data = await res.json();
+    console.log(data.fact);
+
+    res = await fetch(url);
+    data = await res.json();
+    console.log(data.fact);
+    
+    res = await fetch(url);
+    data = await res.json();
+    console.log(data.fact);
+    
+    res = await fetch(url);
+    data = await res.json();
+    console.log(data.fact);
+}
+
+
+
+extraction();
