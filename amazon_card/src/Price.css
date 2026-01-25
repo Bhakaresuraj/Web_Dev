@@ -1,0 +1,13 @@
+.Price{
+    background-color: yellow;
+    height: 52px;
+    width: 100%;
+    display: flex;
+    align-content: center;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
