@@ -1,13 +1,23 @@
+
+// How rendering works using set state
 import { useState } from "react";
 function Counter() {
     // let count=0;
-    let [statevariable,setstatevariable]=useState(10);
-    let [count,setCount]=useState(0);
-    function incCount(){
-        setCount(count+=1);
-        console.log(count);
+
+    function init() {
+        console.log("init was called .....")
+        return Math.random();
     }
-    // console.log(arr);
+
+    let [statevariable, setstatevariable] = useState(10);
+    let [count, setCount] = useState(init);
+    let incCount = () => {
+        // setCount((prevCount) => {
+        //     return prevCount + 1;
+        // });
+        setCount(40);
+        console.log("rendered")
+    }
     return (
         <div>
             <h3>count ={count}</h3>

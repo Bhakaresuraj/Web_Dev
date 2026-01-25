@@ -1,15 +1,17 @@
 import './App.css'
 // import Counter from "./Counter.jsx"
-import Like from "./LikeButt.jsx"
+// import Like from "./LikeButt.jsx"
+import Render from "./Rendering.jsx"
+
 function App() {
 
   return (
     <>
     <h1>States in react</h1>
-    <Like></Like>    
+    <Render></Render>
     
     
-    
+    {/* <Like></Like>     */}
     {/* <Counter></Counter> */}
     </>
   )
