@@ -9,14 +9,10 @@ function Counter() {
         return Math.random();
     }
 
-    let [statevariable, setstatevariable] = useState(10);
-    let [count, setCount] = useState(init);
+    let [count, setCount] = useState(0);
     let incCount = () => {
-        // setCount((prevCount) => {
-        //     return prevCount + 1;
-        // });
-        setCount(40);
-        console.log("rendered")
+        setCount(count + 1);
+        console.log("rendered");
     }
     return (
         <div>
