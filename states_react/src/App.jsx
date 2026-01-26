@@ -10,8 +10,8 @@ function App() {
   return (
     <>
       <h1>Ludo game</h1>
-      <LudoBoard></LudoBoard>
 
+      <LudoBoard></LudoBoard>
       {/* <Render></Render> */}
       {/* <Like></Like>     */}
       {/* <Counter></Counter> */}

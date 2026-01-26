@@ -9,6 +9,12 @@ function ludoBoard() {
 
     let [moves, setMoves] = useState({ blue: 0, yellow: 0, green: 0, red: 0 })
 
+    let [arr,setArray]=useState([]);
+
+    let updateArray=()=>{
+        setArray([...arr,"Blue Moves"])
+    }
+
     let updateBlue = () => {
         setMoves((prevVal) => {
             return { ...prevVal, blue: prevVal.blue + 1 }
@@ -40,8 +46,10 @@ function ludoBoard() {
         <div>
             <h3>Game begins</h3>
             <div className="board">
+                <p>{arr}</p>
+
                 <p>blue moves = {moves.blue}</p>
-                <button onClick={updateBlue} style={{ backgroundColor: "blue" }}>+1</button>
+                <button onClick={updateArray} style={{ backgroundColor: "blue" }}>+1</button>
                 <p>yellow moves ={moves.yellow}</p>
                 <button onClick={updateYellow} style={{ backgroundColor: "yellow", color: "black" }}>+1</button>
                 <p>green moves ={moves.green}</p>
