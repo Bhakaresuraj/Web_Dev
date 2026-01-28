@@ -16,10 +16,25 @@ function Todo() {
         })
     }
     let deleteTodo = (id) => {
-        updateTodo((prevTodo) =>(Todo.filter((prevTodo)=>(prevTodo.id != id))));
+        updateTodo((prevTodo) => (Todo.filter((prevTodo) => (prevTodo.id != id))));
 
     }
 
+    let upper = (id) => {
+        // updateTodo(() => {
+        //     return Todo.map((todo) =>{
+        let newarr=Todo.map((todo) => {
+            if (todo.id == id) {
+                return ({ ...todo, task: todo.task.toUpperCase() })
+            }
+            else {
+                return { ...todo };
+            }
+        })
+        updateTodo(newarr);
+        console.log(newarr);
+
+    }
     return (
         <div>
             <input type="text" value={newTask} onChange={getNewTodo} placeholder="Enter your task ...!" />
@@ -34,11 +49,13 @@ function Todo() {
                     Todo.map((el) => (<li key={el.id}>
                         <span>{el.task}</span>
                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        <button onClick={() =>deleteTodo(el.id)}>delete</button>
+                        <button onClick={() => deleteTodo(el.id)}>delete</button>
+                        < button key={el.id} onClick={() => upper(el.id)}>Upper all</button>
                     </li>))
                 }
             </ul>
-        </div>
+
+        </div >
     )
 }
 
