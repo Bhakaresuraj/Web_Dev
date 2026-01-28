@@ -3,10 +3,9 @@ import { v4 as uuidv4 } from 'uuid';
 function Todo() {
     let [Todo, updateTodo] = useState([]);
     let [newTask, setnewTask] = useState("");
-
     let addNewTask = () => {
         updateTodo((prevTodo) => {
-            return [...prevTodo, { task: newTask, id: uuidv4() }]
+            return [...prevTodo, { task: newTask, id: uuidv4(), done: false }]
         });
         setnewTask("");
     }
@@ -19,11 +18,8 @@ function Todo() {
         updateTodo((prevTodo) => (Todo.filter((prevTodo) => (prevTodo.id != id))));
 
     }
-
     let upper = (id) => {
-        // updateTodo(() => {
-        //     return Todo.map((todo) =>{
-        let newarr=Todo.map((todo) => {
+        let newarr = Todo.map((todo) => {
             if (todo.id == id) {
                 return ({ ...todo, task: todo.task.toUpperCase() })
             }
@@ -33,7 +29,19 @@ function Todo() {
         })
         updateTodo(newarr);
         console.log(newarr);
+    }
+    let Done = (id) => {
+        let newarr = Todo.map((todo) => {
+            if (todo.id == id) {
+                return ({ ...todo, done: !todo.done })
+            }
+            else {
+                return { ...todo };
+            }
+        })
 
+        console.log(newarr);
+        updateTodo(newarr);
     }
     return (
         <div>
@@ -44,13 +52,16 @@ function Todo() {
             <br /><br /><br /><br />
             <hr />
             <h1>Tasks To Do</h1>
+
             <ul>
                 {
                     Todo.map((el) => (<li key={el.id}>
+                        <button onClick={() => (Done(el.id))}>Done</button>
+                        &nbsp;&nbsp;&nbsp;&nbsp;
                         <span>{el.task}</span>
                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                         <button onClick={() => deleteTodo(el.id)}>delete</button>
-                        < button key={el.id} onClick={() => upper(el.id)}>Upper all</button>
+                        < button key={el.id} onClick={() => upper(el.id)}>Upper case</button>
                     </li>))
                 }
             </ul>
