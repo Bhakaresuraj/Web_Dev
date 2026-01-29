@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { v4 as uuidv4 } from 'uuid';
 function Todo() {
-    let [Todo, updateTodo] = useState([]);
+    let [Todo, updateTodo] = useState([{ task: "Study", id: uuidv4(), done: false }]);
     let [newTask, setnewTask] = useState("");
     let addNewTask = () => {
         updateTodo((prevTodo) => {
@@ -56,7 +56,7 @@ function Todo() {
             <ul>
                 {
                     Todo.map((el) => (<li key={el.id}>
-                        <button onClick={() => (Done(el.id))}>Done</button>
+                        <button onClick={() => (Done(el.id))} style={el.done ? { backgroundColor: "Green" } : { backgroundColor: "white" }}>Done</button>
                         &nbsp;&nbsp;&nbsp;&nbsp;
                         <span>{el.task}</span>
                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
