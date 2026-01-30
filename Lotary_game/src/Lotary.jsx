@@ -1,4 +1,5 @@
 import { useState } from "react";
+// import  Ticket from './ticket'
 function Lotary() {
     let [ticket, setticket] = useState(0);
     let [won, setwon] = useState(false);
@@ -21,18 +22,17 @@ function Lotary() {
 
     }
     let gGenerateNum = () => {
-        let Ticnum = Math.floor(Math.random() * 999) + 1;
+        let Ticnum = Math.floor(Math.random() * 999);
         console.log(Ticnum)
         setwon(istrue(Ticnum))
         setticket(Ticnum);
-
-
     }
+
 
     return (
         <div>
             <h1 style={won ? { backgroundColor: "Green" } : { backgroundColor: "red" }}>Lotary : {won ? "Congratulations You own" : "Try Again"}</h1>
-            <h3 style={won ?{backgroundColor:"brown"} :{backgroundColor:"red"}}>Lotary ticket :{ticket}</h3>
+            <h3 style={won ? { backgroundColor: "brown" } : { backgroundColor: "red" }}>Lotary ticket :{ticket}</h3>
             <button style={won ? { backgroundColor: "Green" } : { backgroundColor: "red" }} onClick={gGenerateNum}>Get new Ticket</button>
         </div>
     )
