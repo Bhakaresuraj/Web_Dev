@@ -14,7 +14,7 @@
 //     console.log("Done", result);
 //     // console.log(result);
 
-//     return savedata("kbc");
+    // return savedata("kbc");
 // })
 //     .then((result) => {
 //         console.log("Done", result);
@@ -80,18 +80,18 @@
 
 
 
-// async function greet() {
-//     throw "lazy boy";
-//     return "hello !";
-// }
+async function greet() {
+    // throw "lazy boy";
+    return "hello !";
+}
 // let demo =async ()=> ("demo");
 
-// greet().then((result) => {
-//     console.log("success",result);
-// })
-// .catch((err)=>{
-//     console.log("failure",err)
-// })
+greet().then((result) => {
+    console.log("success",result);
+})
+.catch((err)=>{
+    console.log("failure",err)
+})
 
 
 
@@ -278,39 +278,39 @@
 
 // let p=document.querySelector("p");
 
-let but = document.querySelector(".but");
-let list = document.querySelector(".list");
-let input = document.querySelector("input");
-let url = "http://universities.hipolabs.com/search?name=";
+// let but = document.querySelector(".but");
+// let list = document.querySelector(".list");
+// let input = document.querySelector("input");
+// let url = "http://universities.hipolabs.com/search?name=";
 
-but.addEventListener("click", async () => {
-    let country = input.value;
-    let data = await getJoke(country);
-    // console.log(data[0].name);
-    show(data);
-})
+// but.addEventListener("click", async () => {
+//     let country = input.value;
+//     let data = await getJoke(country);
+//     // console.log(data[0].name);
+//     show(data);
+// })
 
-function show(data) {
-    list.innerHTML = "";
-    for (el of data) {
-        let li = document.createElement("li");
-        li.innerText = el.name;
-        list.appendChild(li);
-    }
-}
+// function show(data) {
+//     list.innerHTML = "";
+//     for (el of data) {
+//         let li = document.createElement("li");
+//         li.innerText = el.name;
+//         list.appendChild(li);
+//     }
+// }
 
-async function getJoke(country) {
-    try {
-        let config = {
-            headers: {
-                "Accept": "application/json"
-            }
-        }
-        let res = await axios.get(url + country, config);
-        return res.data;
-    } catch (err) {
-        return "No clg found";
-    }
-}
+// async function getJoke(country) {
+//     try {
+//         let config = {
+//             headers: {
+//                 "Accept": "application/json"
+//             }
+//         }
+//         let res = await axios.get(url + country, config);
+//         return res.data;
+//     } catch (err) {
+//         return "No clg found";
+//     }
+// }
 
 
