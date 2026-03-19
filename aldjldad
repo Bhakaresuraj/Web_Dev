@@ -1,0 +1,950 @@
+[33mcommit 00bd072f754683844480f7ac1d3d87246b4bbe4c[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Bhakaresuraj <surajbhakare190@gmail.com>
+Date:   Thu Mar 19 10:38:35 2026 +0530
+
+    Exports in node
+    
+    - learned how we can export and require data from one file to another
+    - also from one directory to another directory (using index.js special file act as enter point and combines all the data of that folder )
+
+[33mcommit f2c21f2b596ee0b6fe818cb3d8c680f6f6fe88bf[m
+Author: Bhakaresuraj <surajbhakare190@gmail.com>
+Date:   Thu Mar 19 09:49:55 2026 +0530
+
+    Backend 1 NodeJs Process object
+    
+    - learned process object in node
+    - how can we pass arguments while running file and use it inside file
+    - process.argv (function)
+
+[33mcommit bf1adc700837590634fd018c28c4c2519764b36e[m
+Author: Bhakaresuraj <surajbhakare190@gmail.com>
+Date:   Thu Mar 19 08:55:31 2026 +0530
+
+    Temp File
+    -created temperary file for practice react and java script
+
+[33mcommit 547219378fcbe09297e10ad1c1835a28070c7cb7[m
+Author: Bhakaresuraj <surajbhakare190@gmail.com>
+Date:   Mon Feb 2 09:47:54 2026 +0530
+
+    modified
+
+[33mcommit dfd9e1672faceda5cce0a0b0bf5a9633253e08e5[m
+Author: Bhakaresuraj <surajbhakare190@gmail.com>
+Date:   Fri Jan 30 11:53:05 2026 +0530
+
+    Developed Lotary Game successfully
+
+[33mcommit 417b0edacf9c015d0cbb03b024c92ed338a9a676[m
+Author: Bhakaresuraj <surajbhakare190@gmail.com>
+Date:   Thu Jan 29 17:42:57 2026 +0530
+
+    Developed lotary game using react
+
+[33mcommit a4482040dd5a4fe0305cf8274f38875cc68b5864[m
+Author: Bhakaresuraj <surajbhakare190@gmail.com>
+Date:   Thu Jan 29 09:58:54 2026 +0530
+
+    Homework activity related to Latoury Game
+
+[33mcommit 38a0714eed6d266f4997ba37f56617306a0508a1[m
+Author: Bhakaresuraj <surajbhakare190@gmail.com>
+Date:   Thu Jan 29 09:57:17 2026 +0530
+
+    Successfully implemented mark as done feature in the todo list
+
+[33mcommit 44c3ed2565c81d59577044fad3fa8f302891856c[m
+Author: Bhakaresuraj <surajbhakare190@gmail.com>
+Date:   Wed Jan 28 22:48:56 2026 +0530
+
+    modified
+
+[33mcommit 8d5407f7798931e52b54857a0d8732c9a9c38270[m
+Author: Bhakaresuraj <surajbhakare190@gmail.com>
+Date:   Wed Jan 28 09:18:57 2026 +0530
+
+    updated existing array which is  state variable
+
+[33mcommit c751978b6861538b9e25c9cc7ff64df11d0571c5[m
+Author: Bhakaresuraj <surajbhakare190@gmail.com>
+Date:   Mon Jan 26 19:54:47 2026 +0530
+
+    created todo list using array of objects in react
+
+[33mcommit 2bc9162cb034969d3d80054ca4574c15b153b53f[m
+Author: Bhakaresuraj <surajbhakare190@gmail.com>
+Date:   Mon Jan 26 17:02:29 2026 +0530
+
+    Todo list using react java script
+
+[33mcommit 778a0b06e8eeba39e35ff0e97d0e79ad3b0d0a75[m
+Author: Bhakaresuraj <surajbhakare190@gmail.com>
+Date:   Mon Jan 26 17:01:11 2026 +0530
+
+    learned how to use array as a state variable inn react js
+
+[33mcommit 8229ca1f56686d2f95f1bbe2f45c0c24dbe5cf39[m
+Author: Bhakaresuraj <surajbhakare190@gmail.com>
+Date:   Mon Jan 26 16:46:42 2026 +0530
+
+    learned how to use object as a state variable in react java script
+
+[33mcommit e9b58277de37e778a822089401547738878a0054[m
+Author: Bhakaresuraj <surajbhakare190@gmail.com>
+Date:   Mon Jan 26 15:52:11 2026 +0530
+
+    Ludo Board for using objects in state
+
+[33mcommit 4ee0c6098fd1da1c2d86f9fa73a07c48b9c005a6[m
+Author: Bhakaresuraj <surajbhakare190@gmail.com>
+Date:   Sun Jan 25 23:32:10 2026 +0530
+
+    successfully learned part 3 of react js
+
+[33mcommit f456d7286de268497c2dfe01a3c5585456f4a864[m
+Author: Bhakaresuraj <surajbhakare190@gmail.com>
+Date:   Sun Jan 25 19:58:43 2026 +0530
+
+    How rendering works using set state
+
+[33mcommit c37593e2aee77a3304a588000f7fa68261f76b29[m
+Author: Bhakaresuraj <surajbhakare190@gmail.com>
+Date:   Sun Jan 25 19:29:25 2026 +0530
+
+    Like button created successfully
+
+[33mcommit 43adbc9f0b5816f8e249135346fc9fcee2d3b232[m
+Author: Bhakaresuraj <surajbhakare190@gmail.com>
+Date:   Sun Jan 25 18:49:08 2026 +0530
+
+    Like Button using hook and state concept
+
+[33mcommit 450a21363e17071363969bc66311f5f39d45c164[m
+Author: Bhakaresuraj <surajbhakare190@gmail.com>
+Date:   Sun Jan 25 18:46:21 2026 +0530
+
+    created Counter successfully
+
+[33mcommit 0d5476bb008d802fac89f5415f3cf013afc8930e[m
+Author: Bhakaresuraj <surajbhakare190@gmail.com>
+Date:   Sun Jan 25 18:37:19 2026 +0530
+
+    react states and hooks learning
+
+[33mcommit f9cfde2d1a5be853bc931e83c2ec20235eb43c8b[m
+Author: Bhakaresuraj <surajbhakare190@gmail.com>
+Date:   Sun Jan 25 18:03:26 2026 +0530
+
+    states in react js
+
+[33mcommit cf4032512589b03e826c4ce49b742a891616ab8d[m
+Author: Bhakaresuraj <surajbhakare190@gmail.com>
+Date:   Sun Jan 25 15:07:31 2026 +0530
+
+    events in the react
+
+[33mcommit 49786a80b14ef0c8f935d34a427bb9180bc69e6d[m
+Author: Bhakaresuraj <surajbhakare190@gmail.com>
+Date:   Sun Jan 25 11:01:37 2026 +0530
+
+    react Practice folder made
+
+[33mcommit 8a659d26ea611e64758ad77e037d09980fbc4a0f[m
+Author: Bhakaresuraj <surajbhakare190@gmail.com>
+Date:   Sun Jan 25 10:04:06 2026 +0530
+
+    created amazon card activity successfully
+
+[33mcommit 375404b98e00718dfd473b29243dc2f4c6d06f4a[m
+Author: Bhakaresuraj <surajbhakare190@gmail.com>
+Date:   Wed Jan 21 12:43:29 2026 +0530
+
+    learned full java script today O
+
+[33mcommit 5a9a6a85d7e850137f31585a8feb17149ab6eddb[m
+Author: Bhakaresuraj <surajbhakare190@gmail.com>
+Date:   Wed Jan 21 11:06:02 2026 +0530
+
+    Axios library for api request using axiios.get(url)O
+
+[33mcommit 6425b8cb3b4c940609b3138df20b0af9e6f7751d[m
+Author: Bhakaresuraj <surajbhakare190@gmail.com>
+Date:   Wed Jan 21 10:35:00 2026 +0530
+
+    fetch await and async keywords
+
+[33mcommit 970f8600bc0d157491e2d859454d57da0b593b63[m
+Author: Bhakaresuraj <surajbhakare190@gmail.com>
+Date:   Wed Jan 21 10:16:06 2026 +0530
+
+    async and await keyword practice in fetch keyword
+
+[33mcommit cb35229073524fc4e3a6893f9d6affbe39572537[m
+Author: Bhakaresuraj <surajbhakare190@gmail.com>
+Date:   Tue Jan 20 22:54:31 2026 +0530
+
+    learning about api request
+
+[33mcommit 18200c11ba65789a1b84f0adc46caa53c3c46b65[m
+Author: Bhakaresuraj <surajbhakare190@gmail.com>
+Date:   Tue Jan 20 11:20:59 2026 +0530
+
+    learned async functions which return promise
+
+[33mcommit ed0b264852d0e06c2bb9a644d77f81caa802631a[m
+Author: Bhakaresuraj <surajbhakare190@gmail.com>
+Date:   Tue Jan 20 11:04:05 2026 +0530
+
+    successfully learned javascript part 11 by apana college
+
+[33mcommit f711bb00093dba7d7f25d3cfe7956ef4b2aa3b21[m
+Author: Bhakaresuraj <surajbhakare190@gmail.com>
+Date:   Tue Jan 20 10:40:01 2026 +0530
+
+    promise methods .then and .catch learned also their results and error messages are get known
+
+[33mcommit 62f45d4ce8572177feeb55d6691f8df6fe9b6a32[m
+Author: Bhakaresuraj <surajbhakare190@gmail.com>
+Date:   Mon Jan 19 23:16:34 2026 +0530
+
+    resolve and reject in promice
+
+[33mcommit ddcaa7c65b4467fdfe03d7549b48732c4357af02[m
+Author: Bhakaresuraj <surajbhakare190@gmail.com>
+Date:   Mon Jan 19 23:08:17 2026 +0530
+
+    callback hell code is written
+
+[33mcommit 309a2d9f1d8e1235ec4d1c22a2d36c101a820a4a[m
+Author: Bhakaresuraj <surajbhakare190@gmail.com>
+Date:   Mon Jan 19 22:31:37 2026 +0530
+
+    callback hell learned
+
+[33mcommit 3e51f54db763f35f6c931a8a053ede5e63d2e11c[m
+Author: Bhakaresuraj <surajbhakare190@gmail.com>
+Date:   Mon Jan 19 16:53:25 2026 +0530
+
+    modified
+
+[33mcommit 2acb067b84e90a5a9139f5d47be8c6bd8524f5bb[m
+Author: Bhakaresuraj <surajbhakare190@gmail.com>
+Date:   Mon Jan 19 12:02:58 2026 +0530
+
+    modified
+
+[33mcommit 9e09e5f86e7ed8029b327263083de755d3badf13[m
+Author: Bhakaresuraj <surajbhakare190@gmail.com>
+Date:   Fri Jan 16 18:24:46 2026 +0530
+
+    modified
+
+[33mcommit 301a03f348cc2dc202c21e781a1e44e964d0092a[m
+Author: Bhakaresuraj <surajbhakare190@gmail.com>
+Date:   Fri Jan 16 10:07:13 2026 +0530
+
+    modified
+
+[33mcommit 5fb5633412da5c37503862bbe7390b1780395dbe[m
+Author: Bhakaresuraj <surajbhakare190@gmail.com>
+Date:   Fri Jan 16 08:49:15 2026 +0530
+
+    event delegation means implementing  the event bubbling in code
+
+[33mcommit 649938457e82932ad351fad8965f34fef7b435f7[m
+Author: Bhakaresuraj <surajbhakare190@gmail.com>
+Date:   Thu Jan 15 23:22:43 2026 +0530
+
+    Todo list using javascri[t listners
+
+[33mcommit 29a22bc8e80eaa22ce5364e99f10521b74789849[m
+Author: Bhakaresuraj <surajbhakare190@gmail.com>
+Date:   Thu Jan 15 22:00:55 2026 +0530
+
+    learned javascript part 10 successfully
+
+[33mcommit dc1d00042b7b9ca7856f9f7bf66ad4b97a9cabe6[m
+Author: Bhakaresuraj <surajbhakare190@gmail.com>
+Date:   Thu Jan 15 12:45:29 2026 +0530
+
+    completed 10 part of the java script o
+
+[33mcommit d4f407bfc4d7e11243ab41baaa75823a8d72cc83[m
+Author: Bhakaresuraj <surajbhakare190@gmail.com>
+Date:   Thu Jan 15 11:40:13 2026 +0530
+
+    form events learned
+
+[33mcommit 5a51ae543b56172a6568730dfb9ab2b789a61d80[m
+Author: Bhakaresuraj <surajbhakare190@gmail.com>
+Date:   Thu Jan 15 11:03:27 2026 +0530
+
+    default argument (event ) in callback after triggering any event
+
+[33mcommit c85f56328260fa91ea4319c574e03e960f6d7787[m
+Author: Bhakaresuraj <surajbhakare190@gmail.com>
+Date:   Thu Jan 15 10:17:01 2026 +0530
+
+    modified
+
+[33mcommit 11bc5c7cd2475f4918db5ddcf530f3213f568f20[m
+Author: Bhakaresuraj <surajbhakare190@gmail.com>
+Date:   Thu Jan 15 10:00:56 2026 +0530
+
+    activity performed well
+
+[33mcommit 36d3e42114901fe9fe0bc0a49c15b3a5e11d1723[m
+Author: Bhakaresuraj <surajbhakare190@gmail.com>
+Date:   Thu Jan 15 08:48:35 2026 +0530
+
+     Activity on the event listners
+
+[33mcommit 18482a4a18fb93b95f17568ab4466fe033c6b7e0[m
+Author: Bhakaresuraj <surajbhakare190@gmail.com>
+Date:   Wed Jan 14 22:41:41 2026 +0530
+
+    modified
+
+[33mcommit ccd2c1774d4e37cd35c5081a1f95df8efe10b82d[m
+Author: Bhakaresuraj <surajbhakare190@gmail.com>
+Date:   Wed Jan 14 12:29:22 2026 +0530
+
+    javascript part 9 is completed (assignment answers are here. ).
+
+[33mcommit 1311cfc058fb0c8dda2e1a0fcfe73eac81975c26[m
+Author: Bhakaresuraj <surajbhakare190@gmail.com>
+Date:   Wed Jan 14 10:19:18 2026 +0530
+
+    learned insert adjacent function for adding new element in html through java script
+
+[33mcommit 3c1505795e5972855d6eb0d7e6e68422f09e6a20[m
+Author: Bhakaresuraj <surajbhakare190@gmail.com>
+Date:   Wed Jan 14 09:09:39 2026 +0530
+
+    navigation through Html elements using ja
+
+[33mcommit b5f0f614dda05ad07abd1485d5cc86503ac90d8d[m
+Author: Bhakaresuraj <surajbhakare190@gmail.com>
+Date:   Wed Jan 14 08:34:59 2026 +0530
+
+    modified
+
+[33mcommit 4b491c0193727b4954b56d9842279ccc6ac567c3[m
+Author: Bhakaresuraj <surajbhakare190@gmail.com>
+Date:   Tue Jan 13 11:42:02 2026 +0530
+
+    modified
+
+[33mcommit 8943d1aeb0bac17ed48f628b44193c8d457dd693[m
+Author: Bhakaresuraj <surajbhakare190@gmail.com>
+Date:   Tue Jan 13 09:27:32 2026 +0530
+
+    modified
+
+[33mcommit 8ee2187a577849e38cff4ea2cb6fab0522fd3ed5[m
+Author: Bhakaresuraj <surajbhakare190@gmail.com>
+Date:   Tue Jan 13 08:25:08 2026 +0530
+
+    modified
+
+[33mcommit 133fbdeac8a39f13e1051c1854549f09bb17914d[m
+Author: Bhakaresuraj <surajbhakare190@gmail.com>
+Date:   Mon Jan 12 18:12:37 2026 +0530
+
+    modified
+
+[33mcommit 0b178e63a6f813c6e0802fa6387d75c6bd30e0d0[m
+Author: Bhakaresuraj <surajbhakare190@gmail.com>
+Date:   Mon Jan 12 17:54:03 2026 +0530
+
+    completed javascript pat 8
+
+[33mcommit 3a33ac7667028bb57cc4fdf8996159d3e753f1a2[m
+Author: Bhakaresuraj <surajbhakare190@gmail.com>
+Date:   Mon Jan 12 17:17:10 2026 +0530
+
+    modified
+
+[33mcommit 1e93a509ba89469f3f111deb5ca5dc7659de2fee[m
+Author: Bhakaresuraj <surajbhakare190@gmail.com>
+Date:   Sun Jan 11 23:52:48 2026 +0530
+
+    modified
+
+[33mcommit c1e00803b9a1de35557379021429d14e697eb0dc[m
+Author: Bhakaresuraj <surajbhakare190@gmail.com>
+Date:   Sun Jan 11 23:23:01 2026 +0530
+
+    modied
+
+[33mcommit 99db1e260c56430998ca1773024a929dca987dbb[m
+Author: Bhakaresuraj <surajbhakare190@gmail.com>
+Date:   Sun Jan 11 20:02:08 2026 +0530
+
+    modified
+
+[33mcommit 18714fe5b9791a496d71a8a9238a057eef73231c[m
+Author: Bhakaresuraj <surajbhakare190@gmail.com>
+Date:   Sat Jan 10 10:06:13 2026 +0530
+
+    modified
+
+[33mcommit 560884b7f45eb8804c7afa4391d24ab3274febcd[m
+Author: Bhakaresuraj <surajbhakare190@gmail.com>
+Date:   Fri Jan 9 17:41:33 2026 +0530
+
+    modified
+
+[33mcommit b72ff74c66a7916a71b7b1ce44d81d36cbe6c1a5[m
+Author: Bhakaresuraj <surajbhakare190@gmail.com>
+Date:   Fri Jan 9 10:25:02 2026 +0530
+
+    modified
+
+[33mcommit 5ac7c0468db93ef6f9d269e3640c49bba071a6ba[m
+Author: Bhakaresuraj <surajbhakare190@gmail.com>
+Date:   Thu Jan 8 08:41:47 2026 +0530
+
+    assignment completed
+
+[33mcommit 21c688b0b24bb989f81b3a67f7ef08387d01f657[m
+Author: Bhakaresuraj <surajbhakare190@gmail.com>
+Date:   Thu Jan 8 08:07:10 2026 +0530
+
+    modified
+
+[33mcommit aa358f75eec0d08dc3e6aa54a93755e0a705c504[m
+Author: Bhakaresuraj <surajbhakare190@gmail.com>
+Date:   Wed Jan 7 19:53:08 2026 +0530
+
+    To do list
+
+[33mcommit 6c8cc998dadaba142eaadec76e7298dfc68d1fc6[m
+Author: Bhakaresuraj <surajbhakare190@gmail.com>
+Date:   Wed Jan 7 18:17:43 2026 +0530
+
+    Learning from apana college
+
+[33mcommit 15105273fef590b83361eeeca62644187cc6e3df[m
+Author: Bhakaresuraj <surajbhakare190@gmail.com>
+Date:   Sat Nov 22 19:12:59 2025 +0530
+
+    day 23
+
+[33mcommit fa3685ec4cdbbc41b3533947c97b3e21c3acffff[m
+Author: Bhakaresuraj <surajbhakare190@gmail.com>
+Date:   Thu Nov 20 17:56:29 2025 +0530
+
+    all set
+
+[33mcommit d44ea1d23c43b0fe4847bfbbc8e1e062fc9572a2[m
+Author: Bhakaresuraj <surajbhakare190@gmail.com>
+Date:   Thu Nov 20 17:52:30 2025 +0530
+
+    modified
+
+[33mcommit c0d56ef1c03cf772322b2784f360da1eb291b5e8[m
+Author: Bhakaresuraj <surajbhakare190@gmail.com>
+Date:   Tue Nov 18 10:27:24 2025 +0530
+
+    day 22
+
+[33mcommit ee7db397b44a4c10d33f33781f09bcd46825e40a[m
+Author: Bhakaresuraj <surajbhakare190@gmail.com>
+Date:   Mon Nov 17 11:14:55 2025 +0530
+
+     Day 21 of Web dev learning of loops and conditional statements
+
+[33mcommit 25c0a702867e9805f2548641e846c5bb732032d7[m
+Author: Bhakaresuraj <surajbhakare190@gmail.com>
+Date:   Sun Nov 16 19:59:34 2025 +0530
+
+    modified
+
+[33mcommit 8eb75d7d6beea16e954ab8dff978292fbedf5b1c[m
+Author: Bhakaresuraj <surajbhakare190@gmail.com>
+Date:   Sat Nov 15 11:23:37 2025 +0530
+
+    day 21
+
+[33mcommit a7a09ae520dd9b723f3d3be2b550ebb1df764da8[m
+Author: Bhakaresuraj <surajbhakare190@gmail.com>
+Date:   Sat Nov 15 10:23:43 2025 +0530
+
+    day 20 modified
+
+[33mcommit 4a6439e66f426a5eadab8f23604ab1ab886695f1[m
+Author: Bhakaresuraj <surajbhakare190@gmail.com>
+Date:   Sat Nov 15 10:14:00 2025 +0530
+
+    day 20
+
+[33mcommit 2e86fa4eb6ffdfd37498254bfb4a840b2da5be6b[m
+Author: Bhakaresuraj <surajbhakare190@gmail.com>
+Date:   Thu Oct 30 07:41:06 2025 +0530
+
+    First java script code
+
+[33mcommit c3a7bd3d202871f963f24ed18cba4f134ea22fb8[m
+Author: Bhakaresuraj <surajbhakare190@gmail.com>
+Date:   Thu Oct 16 21:47:11 2025 +0530
+
+    hfiewh
+
+[33mcommit 3fe302d4900be3ec790df9cacfdcbb9ddb3999be[m
+Author: Bhakaresuraj <surajbhakare190@gmail.com>
+Date:   Thu Oct 16 20:01:42 2025 +0530
+
+    Starting of Java Script
+
+[33mcommit a94181694dad4bfdcadaa971974d4697732add3a[m
+Author: Bhakaresuraj <surajbhakare190@gmail.com>
+Date:   Wed Oct 8 23:53:17 2025 +0530
+
+    modified
+
+[33mcommit 18f044db93df04456dc49f011f5e37187c53c13a[m
+Author: Bhakaresuraj <surajbhakare190@gmail.com>
+Date:   Thu Oct 2 10:47:11 2025 +0530
+
+    modified
+
+[33mcommit 609ebeda7640df177bb9db619f027af6cee3b997[m
+Author: Bhakaresuraj <surajbhakare190@gmail.com>
+Date:   Wed Oct 1 10:34:41 2025 +0530
+
+    Day 19 : object-fit and cover background images
+
+[33mcommit 02578c6c8b19e75da7021b64267d5c82750de092[m
+Author: Bhakaresuraj <surajbhakare190@gmail.com>
+Date:   Wed Oct 1 10:32:41 2025 +0530
+
+    bouncing ball animation
+
+[33mcommit 0448bf8d3a3656a50c481dc65852d943146f0ed8[m
+Author: Bhakaresuraj <surajbhakare190@gmail.com>
+Date:   Tue Sep 30 22:11:52 2025 +0530
+
+    modified
+
+[33mcommit 23ccbb549470ee93aa5cf68e3c9c93f6dca9bcc9[m
+Author: Bhakaresuraj <surajbhakare190@gmail.com>
+Date:   Tue Sep 30 18:51:14 2025 +0530
+
+     Exercise no 8
+
+[33mcommit 3dc7cca51f580accd89f7b317f99261941475869[m
+Author: Bhakaresuraj <surajbhakare190@gmail.com>
+Date:   Tue Sep 30 18:48:45 2025 +0530
+
+    modofied
+
+[33mcommit 6515e3b833accd637ee67b1e432af4391c04a009[m
+Author: Bhakaresuraj <surajbhakare190@gmail.com>
+Date:   Tue Sep 30 17:20:09 2025 +0530
+
+    modifiedd
+
+[33mcommit 2d9ef5891d7a1419fde85f0a34f486c3549d5412[m
+Author: Bhakaresuraj <surajbhakare190@gmail.com>
+Date:   Tue Sep 30 11:42:20 2025 +0530
+
+    margin added
+
+[33mcommit 6e36dbad4bad6029a45194146b20ab4546ce4e74[m
+Author: Bhakaresuraj <surajbhakare190@gmail.com>
+Date:   Tue Sep 30 11:40:06 2025 +0530
+
+    modified
+
+[33mcommit b69220c41240e10053a99c63096870422b0ecbd3[m
+Author: Bhakaresuraj <surajbhakare190@gmail.com>
+Date:   Mon Sep 29 23:50:51 2025 +0530
+
+     Day 18
+
+[33mcommit 5e72bf9156e9f9ba13a694de4483a9c31a93c09f[m
+Author: Bhakaresuraj <surajbhakare190@gmail.com>
+Date:   Mon Sep 29 22:56:00 2025 +0530
+
+    modified
+
+[33mcommit d9cb5b9e9a360c6abbd4c04a1d84109e5d81503e[m
+Author: Bhakaresuraj <surajbhakare190@gmail.com>
+Date:   Mon Sep 29 22:52:33 2025 +0530
+
+    modified
+
+[33mcommit f1547326d2bef2b25c2448162632637d314e5e92[m
+Author: Bhakaresuraj <surajbhakare190@gmail.com>
+Date:   Mon Sep 29 22:13:14 2025 +0530
+
+    modified
+
+[33mcommit b82b9f57e341017d52ec4d1fbc4ca2f43e508d83[m
+Author: Bhakaresuraj <surajbhakare190@gmail.com>
+Date:   Mon Sep 29 20:25:12 2025 +0530
+
+    modified
+
+[33mcommit 76a20e5801862ad4632690960eed169da22778cc[m
+Author: Bhakaresuraj <surajbhakare190@gmail.com>
+Date:   Mon Sep 29 18:59:16 2025 +0530
+
+    modified
+
+[33mcommit 5ac910d2ad7c273b4a4930377161cd4c70d5b7fe[m
+Author: Bhakaresuraj <surajbhakare190@gmail.com>
+Date:   Sun Sep 28 15:42:12 2025 +0530
+
+    modified
+
+[33mcommit fbd1b173b1e5b74e4afcd9201160e81582bcb6b7[m
+Author: Bhakaresuraj <surajbhakare190@gmail.com>
+Date:   Sun Sep 28 14:37:37 2025 +0530
+
+    modified
+
+[33mcommit c99390287bd54619ff0c3ac7c7464efc087cf2bf[m
+Author: Bhakaresuraj <surajbhakare190@gmail.com>
+Date:   Sun Sep 28 12:07:02 2025 +0530
+
+    Grid part 2 by Grid Area
+
+[33mcommit 197bffce7a9d180541d08bcfd3b7c4e8a2473b87[m
+Author: Bhakaresuraj <surajbhakare190@gmail.com>
+Date:   Sun Sep 28 12:05:42 2025 +0530
+
+    modified
+
+[33mcommit 6d4e0f03b700f13ad80a1036e4d55b7fb0c76d99[m
+Author: Bhakaresuraj <surajbhakare190@gmail.com>
+Date:   Sun Sep 28 10:49:01 2025 +0530
+
+    Day 17
+
+[33mcommit 74b5b46e4f80d070c491b6c53cb9790db8be7205[m
+Author: Bhakaresuraj <surajbhakare190@gmail.com>
+Date:   Sun Sep 28 10:00:45 2025 +0530
+
+    modified
+
+[33mcommit 288bbd7603d605af30ee60fedff90c45784c03dc[m
+Author: Bhakaresuraj <surajbhakare190@gmail.com>
+Date:   Fri Sep 26 17:08:12 2025 +0530
+
+    modified
+
+[33mcommit 4078addf52c4edd93b63c60b08b0254408d889bb[m
+Author: Bhakaresuraj <surajbhakare190@gmail.com>
+Date:   Fri Sep 26 17:02:58 2025 +0530
+
+    day 16
+
+[33mcommit ae1067b47ef1acb837b0ab59fde74e29254bb4e1[m
+Author: Bhakaresuraj <surajbhakare190@gmail.com>
+Date:   Thu Sep 25 16:37:28 2025 +0530
+
+    Exercise no 5
+
+[33mcommit 62de21757d9e465ffff7a277d6bb08e805390d58[m
+Author: Bhakaresuraj <surajbhakare190@gmail.com>
+Date:   Thu Sep 25 16:36:42 2025 +0530
+
+    modified
+
+[33mcommit 96c65e516f095592dc9ec67e083cc0e98119437f[m
+Author: Bhakaresuraj <surajbhakare190@gmail.com>
+Date:   Thu Sep 25 14:55:29 2025 +0530
+
+    modified
+
+[33mcommit 937f44a72276d328c12237fef7537c1fbcca7f28[m
+Author: Bhakaresuraj <surajbhakare190@gmail.com>
+Date:   Thu Sep 25 14:20:35 2025 +0530
+
+    more css selector
+
+[33mcommit 7bcf1ed2bf2d5e3839c525a6fe7ae1352878a74f[m
+Author: Bhakaresuraj <surajbhakare190@gmail.com>
+Date:   Thu Sep 25 14:13:13 2025 +0530
+
+    modified
+
+[33mcommit 37321de275c5e80e4855104a07d2cdfb511879f2[m
+Author: Bhakaresuraj <surajbhakare190@gmail.com>
+Date:   Thu Sep 25 13:27:13 2025 +0530
+
+    day  15 of the web development
+
+[33mcommit 94952e75097fc999e053fc2163ea02d6e0c7f7dd[m
+Author: Bhakaresuraj <surajbhakare190@gmail.com>
+Date:   Thu Sep 25 13:25:37 2025 +0530
+
+    \modified
+
+[33mcommit b32a0f57f82caeb16d4328c02e031727d8814f9e[m
+Author: Bhakaresuraj <surajbhakare190@gmail.com>
+Date:   Wed Sep 24 19:07:46 2025 +0530
+
+    Exercise 4 (Navbar using  CSS variables)
+
+[33mcommit 40cfda2963624350640e142256aab95ed159b152[m
+Author: Bhakaresuraj <surajbhakare190@gmail.com>
+Date:   Wed Sep 24 19:06:14 2025 +0530
+
+    modified
+
+[33mcommit e86e8174a2f9722dfc37bccd0411620f22b61953[m
+Author: Bhakaresuraj <surajbhakare190@gmail.com>
+Date:   Wed Sep 24 19:00:21 2025 +0530
+
+    modified
+    x
+
+[33mcommit 35d7dbec18384f1d6b84455353e6efe4a1153663[m
+Author: Bhakaresuraj <surajbhakare190@gmail.com>
+Date:   Wed Sep 24 17:23:35 2025 +0530
+
+    exercise
+
+[33mcommit 0a3d57c64ecfe0e689c6e340c63f7a928387e47d[m
+Author: Bhakaresuraj <surajbhakare190@gmail.com>
+Date:   Wed Sep 24 17:20:58 2025 +0530
+
+    modified
+
+[33mcommit d60370f9469c0bbc7b4299c9f3db5f722ac14e1b[m
+Author: Bhakaresuraj <surajbhakare190@gmail.com>
+Date:   Wed Sep 24 16:54:23 2025 +0530
+
+    modified
+
+[33mcommit c1bd7c64ef9e9772a6be971ee758690d9d399f0f[m
+Author: Bhakaresuraj <surajbhakare190@gmail.com>
+Date:   Wed Sep 24 12:30:06 2025 +0530
+
+    day 14
+
+[33mcommit 0535a6b850835df77ef007cb665aec71ddfe1809[m
+Author: Bhakaresuraj <surajbhakare190@gmail.com>
+Date:   Tue Sep 23 18:19:21 2025 +0530
+
+    modified
+
+[33mcommit 4485d36027fa83d26f743edbdb6486fb52a7970c[m
+Author: Bhakaresuraj <surajbhakare190@gmail.com>
+Date:   Tue Sep 23 15:10:32 2025 +0530
+
+    modified
+
+[33mcommit 591d4c013415da0469036095fb67c84d1a19901c[m
+Author: Bhakaresuraj <surajbhakare190@gmail.com>
+Date:   Tue Sep 23 12:21:06 2025 +0530
+
+    exercise
+
+[33mcommit 567053fabc0c82253273951860e9709f639067a2[m
+Author: Bhakaresuraj <surajbhakare190@gmail.com>
+Date:   Tue Sep 23 12:19:02 2025 +0530
+
+    modified
+
+[33mcommit f10651e34dc09d7c88bf2ba57cc7dad3491f6d45[m
+Author: Bhakaresuraj <surajbhakare190@gmail.com>
+Date:   Tue Sep 23 11:15:02 2025 +0530
+
+    Day 13
+
+[33mcommit b843a289f72584caae9836dbf736673f8f9552fc[m
+Author: Bhakaresuraj <surajbhakare190@gmail.com>
+Date:   Mon Sep 22 19:26:13 2025 +0530
+
+    Designing list using CSS
+
+[33mcommit bdf8507344c5be0ae4ee254e20d62b39a55e1246[m
+Author: Bhakaresuraj <surajbhakare190@gmail.com>
+Date:   Mon Sep 22 18:52:36 2025 +0530
+
+    css shadow property
+
+[33mcommit 399cf51344b9c0e12f1505b1f5131f97a57c9f3a[m
+Author: Bhakaresuraj <surajbhakare190@gmail.com>
+Date:   Mon Sep 22 18:03:41 2025 +0530
+
+    display prooerties in css
+
+[33mcommit 1f7d85c57e15d2dc1dadc8c56cc0d51aa36174b7[m
+Author: Bhakaresuraj <surajbhakare190@gmail.com>
+Date:   Mon Sep 22 17:28:32 2025 +0530
+
+    Folder made
+
+[33mcommit 7b3202cf5107712a684cf64d8e444cb8f133522d[m
+Author: Bhakaresuraj <surajbhakare190@gmail.com>
+Date:   Mon Sep 22 17:27:57 2025 +0530
+
+    modified
+
+[33mcommit f561c4cbbe9dbd1b0459a82190c87db408a3ca3a[m
+Author: Bhakaresuraj <surajbhakare190@gmail.com>
+Date:   Mon Sep 22 13:16:45 2025 +0530
+
+    New folder
+
+[33mcommit 773f27f7fe560310842691fc1869fcbe68191b44[m
+Author: Bhakaresuraj <surajbhakare190@gmail.com>
+Date:   Mon Sep 22 13:14:13 2025 +0530
+
+    modified
+
+[33mcommit 7049d89a584740efdd8a98b1dc957292c6c4068f[m
+Author: Bhakaresuraj <surajbhakare190@gmail.com>
+Date:   Sun Sep 21 10:02:25 2025 +0530
+
+     Practice set
+
+[33mcommit e6af3f2a4c76faab59a36bee1ae168c01cbda35c[m
+Author: Bhakaresuraj <surajbhakare190@gmail.com>
+Date:   Sun Sep 21 10:00:19 2025 +0530
+
+    Css
+
+[33mcommit 3506d03ab2d3aa312dd0f8222c06c23a43fa9b4a[m
+Author: Bhakaresuraj <surajbhakare190@gmail.com>
+Date:   Sat Sep 20 14:50:02 2025 +0530
+
+    modified
+
+[33mcommit e9dbf3b639528d5713eeb963066bb7923f00a2ee[m
+Author: Bhakaresuraj <surajbhakare190@gmail.com>
+Date:   Sat Sep 20 09:57:08 2025 +0530
+
+    modified
+
+[33mcommit d59214a84faf0058d86fb43d461f23f9cfe11694[m
+Author: Bhakaresuraj <surajbhakare190@gmail.com>
+Date:   Sat Sep 20 09:49:52 2025 +0530
+
+    Doing a css
+
+[33mcommit f837c3a3012aa18558ae664ca3dd79dbf14a34e0[m
+Author: Bhakaresuraj <surajbhakare190@gmail.com>
+Date:   Sat Sep 20 09:47:32 2025 +0530
+
+    modified
+
+[33mcommit 8c7d60601148d4781b4926ea624c9b034b9fcc6f[m
+Author: Bhakaresuraj <surajbhakare190@gmail.com>
+Date:   Sat Sep 20 09:45:58 2025 +0530
+
+    Ignore data folder from Git tracking
+
+[33mcommit 5a8a4268666d59be6cbb62b2dd383cffc4348c88[m
+Author: Bhakaresuraj <surajbhakare190@gmail.com>
+Date:   Fri Sep 19 20:29:57 2025 +0530
+
+    modified
+
+[33mcommit bbd03f3948ef452a8a7bcc32a9a0894688bbfbe0[m
+Author: Bhakaresuraj <surajbhakare190@gmail.com>
+Date:   Fri Sep 19 20:15:38 2025 +0530
+
+    modify
+
+[33mcommit d542601ec8afad67e52742f9f49eb6fea7458888[m
+Author: Bhakaresuraj <surajbhakare190@gmail.com>
+Date:   Fri Sep 19 19:29:50 2025 +0530
+
+    modify
+
+[33mcommit e46453d11e1b588934266865d88b93352d8afa96[m
+Author: Bhakaresuraj <surajbhakare190@gmail.com>
+Date:   Fri Sep 19 12:22:58 2025 +0530
+
+    html covered
+
+[33mcommit 30f6a669c95cb5387ee95e590ee18ae49cb61ee5[m
+Author: Bhakaresuraj <surajbhakare190@gmail.com>
+Date:   Fri Sep 19 08:32:07 2025 +0530
+
+    edited cheetsheet liink
+
+[33mcommit ac03b74443e286eef3dac94067cc7e5724afef27[m
+Author: Bhakaresuraj <surajbhakare190@gmail.com>
+Date:   Thu Sep 18 20:05:54 2025 +0530
+
+     Favicon (image appers at the start of the tile of the web page )
+
+[33mcommit 5feaff131ab25916c2caf34b33ba86ecbcca0115[m
+Author: Bhakaresuraj <surajbhakare190@gmail.com>
+Date:   Thu Sep 18 18:22:37 2025 +0530
+
+    better SEO practice
+
+[33mcommit 918d7120529d6182cd0a5a28b35787f0aecae2ac[m
+Author: Bhakaresuraj <surajbhakare190@gmail.com>
+Date:   Thu Sep 18 18:21:06 2025 +0530
+
+    related to tables
+
+[33mcommit 9e5f21d1a80653c50b7f8967d179ad3891442e44[m
+Author: Bhakaresuraj <surajbhakare190@gmail.com>
+Date:   Thu Sep 18 10:52:27 2025 +0530
+
+    table in html
+
+[33mcommit 63b273dd70fe222f588df2a18b298799d634528e[m
+Author: Bhakaresuraj <surajbhakare190@gmail.com>
+Date:   Thu Sep 18 09:44:13 2025 +0530
+
+    Day 5
+
+[33mcommit 1a0127ee860c9b5415ceaaa5f8ce865b1732d440[m
+Author: Bhakaresuraj <surajbhakare190@gmail.com>
+Date:   Wed Sep 17 16:17:31 2025 +0530
+
+    Day 4
+
+[33mcommit 90f38561f9671b23b9c535c26e7e02a25f628f3e[m
+Author: Bhakaresuraj <surajbhakare190@gmail.com>
+Date:   Wed Sep 17 10:45:23 2025 +0530
+
+    nvednvi
+
+[33mcommit b467f0b0ecf5d1460429237e5de1fcfaca89f5d2[m
+Author: Bhakaresuraj <surajbhakare190@gmail.com>
+Date:   Wed Sep 17 10:38:54 2025 +0530
+
+     Notes
+
+[33mcommit 4a68a5c93bd6c251daf3a6dd4ef47447b7ab0aaf[m
+Author: Bhakaresuraj <surajbhakare190@gmail.com>
+Date:   Wed Sep 17 00:11:39 2025 +0530
+
+    suraj
+
+[33mcommit 9762c6c2be9e8cbb01536c5e633d01e18cbabae0[m
+Author: Bhakaresuraj <surajbhakare190@gmail.com>
+Date:   Wed Sep 17 00:04:17 2025 +0530
+
+     Day 2
+
+[33mcommit 648aba3e65a6df78fd1964434c157491a389b842[m
+Author: Bhakaresuraj <surajbhakare190@gmail.com>
+Date:   Tue Sep 16 23:56:00 2025 +0530
+
+    Day 1
+
+[33mcommit 8266e6f3bfcc8f86043d343c98c337c7bbdc0617[m
+Author: Suraj Bhakare <surajbhakare190@gmail.com>
+Date:   Tue Sep 16 23:38:55 2025 +0530
+
+    Delete index.html
+
+[33mcommit 19e62879dc96e5491e6f2c01063e34099171b740[m
+Author: Bhakaresuraj <surajbhakare190@gmail.com>
+Date:   Tue Sep 16 21:33:17 2025 +0530
+
+    day 1
