@@ -1,9 +1,9 @@
 
 
 
-/*
 
------------views directory in ejs----------------
+
+// -----------views directory in ejs----------------
 const express=require("express");
 const app=express();
 const port=3000;
@@ -22,5 +22,4 @@ app.get("/home",(req,res)=>{
 app.get("/",(req,res)=>{
     res.render("home.ejs");
 })
-*/
 
