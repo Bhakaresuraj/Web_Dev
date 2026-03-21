@@ -51,22 +51,38 @@ app.use((req,res)=>{
 // })
 */
 
-/*
----------path parameters--------- 
-const express =require("express");
-let port = 3000;
-const app=express();
 
-app.listen(port,()=>{
+
+/*
+// ---------path parameters and handling query strings--------- 
+const express = require("express");
+let port = 3000;
+const app = express();
+
+app.listen(port, () => {
     console.log("app is listining");
 });
 
-app.get("/:username/:id" ,(req,res)=>{
+app.get("/:username/:id", (req, res) => {
+    // Path pra
     console.log(req.params);
-    let greet=`<h1>Hello ${req.params.username} Good Morning .....! </h1>`;
+    let greet = `<h1>Hello ${req.params.username} Good Morning .....! </h1>`;
     res.send(greet);
+
+})
+app.get("/search", (req, res) => {
+
+    // if we search for query in url like http://localhost:3000/search?q=apple
+    console.log(req.query);
+    let {q}=req.query;
+    if(!q){
+        res.send(`<h1>Nothing Searched......!</h1>`);
+    }
+    res.send(`<h1> The search results for query : ${q} </h1>`);
+
 })
 
-*/
+ */
 
- 
+
+
