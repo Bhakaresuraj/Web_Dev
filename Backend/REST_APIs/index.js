@@ -1,29 +1,90 @@
-const express= require("express");
-const app=express();
-const path =require("path");
+const express = require("express");
+const app = express();
+const path = require("path");
 const { text } = require("stream/consumers");
-let port=3000;
+let port = 3000;
 
+const { v4: uuidv4 } = require('uuid');
 // For parsing the data using middlewares ......
-app.use(express.urlencoded({extended:true}));
+app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-app.listen(port,()=>{
+app.listen(port, () => {
     console.log(`Server is running on the port :${port} .`);
 });
 
 
 
 // setting ejs 
-app.set("view engine","ejs");
+app.set("view engine", "ejs");
 // telling the path of view and public folder to server
-app.set("views",path.join(__dirname,"/views"));
-app.use(express.static(path.join(__dirname,"/public/CSS")));
-app.use(express.static(path.join(__dirname,"/public/JS")));
+app.set("views", path.join(__dirname, "/views"));
+app.use(express.static(path.join(__dirname, "/public/CSS")));
+app.use(express.static(path.join(__dirname, "/public/JS")));
 
 
 // creating routes..
 
-app.get("/",(req,res)=>{
+app.get("/ ", (req, res) => {
     res.send("Server working Well.........!");
+})
+
+let posts = [{
+    id: uuidv4(),
+    username: "suraj",
+    content: "Learning REST "
+},
+{
+    id: uuidv4(),
+    username: "Rahul",
+    content: "Learning dsa "
+},
+{
+    id: uuidv4(),
+    username: "Yash",
+    content: "Learning Aptitude "
+}
+
+
+
+]
+// 1 Index Route.......
+app.get("/posts", (req, res) => {
+    res.render("index.ejs", { posts });
+})
+
+
+app.get("/posts/new", (req, res) => {
+    res.render("new.ejs");
+})
+
+app.post("/posts", (req, res) => {
+    console.log(req.body);
+    let { username, content } = req.body;
+    posts.push({
+        id: uuidv4(),
+        username: username,
+        content: content
+    });
+    res.redirect("http://localhost:3000/posts");
+})
+
+
+app.get("/posts/:id", (req, res) => {
+    let { id } = req.params;
+    console.log(id);
+    let post = posts.find((p) => id === p.id);
+    console.log(post);
+    res.render("show.ejs", { post });
+});
+
+app.patch("/posts/:id", (req, res) => {
+    let { id } = req.params;
+    console.log(id);
+    let newContent = req.body.content;
+    let post = posts.find((p) => id === p.id);
+    post.content=newContent;
+    console.log(post);
+    // console.log(post);
+    res.send("working");
 })
