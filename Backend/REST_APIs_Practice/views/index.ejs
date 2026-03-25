@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posts</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>All Posts</h1>
+    <%for(let post of posts) { %>
+        <div class="post">
+            <h3>Id : <%= post.id %>
+            </h3>
+            <h3>@<%= post.name %>
+            </h3>
+            <p>
+                <%= post.content %>
+            </p>
+            <br>
+            <a href="">see detail</a>
+
+        </div>
+        <%}%>
+        <br>
+        <a href="">new post</a>
+</body>
+
+</html>
