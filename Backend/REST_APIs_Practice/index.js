@@ -19,8 +19,8 @@ app.get("/", (req, res) => {
     res.send("Server is Working fine...");
 });
 
-let posts = [{ id: uuidv4(), name: "suraj", content: "hello" },
-{ id: uuidv4(), name: "Yash", content: "Hi" }
+let posts = [{ id: "1", name: "suraj", content: "hello" },
+{ id: "2", name: "Yash", content: "Hi" }
 ];
 
 // index page render .....
@@ -32,8 +32,10 @@ app.get("/posts/:id", (req, res) => {
     let { id } = req.params;
     let post = posts.find((p) => id === p.id);
     console.log(post);
+    
 
-    res.send(post);
+    // res.send(post);
+    res.render("show.ejs",{ post });
 
 })
 
