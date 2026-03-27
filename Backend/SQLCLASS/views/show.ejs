@@ -21,6 +21,8 @@
             <th>Email</th>
             <th>username</th>
             <th>Password</th>
+            <th></th>
+            <th></th>
         </tr>
         <%for(let user of data){%>
             <tr>
@@ -41,8 +43,12 @@
                         <button>Edit username</button>
                     </form>
                 </td>
+                <td>
+                    <form method="POST" action="/users/<%=user.id%>?_method=DELETE">
+                        <button>Delete user </button>
+                    </form>
+                </td>
             </tr>
-
             <%}%>
     </table>
 </body>

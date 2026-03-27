@@ -32,138 +32,140 @@ app.get("/", (req, res) => {
     }
 })
 
-// ...existing code...
-
-// edit  form route -> edit form -> patch request 
-app.get("/users/:id/edit", (req, res) => {
-    let { id } = req.params;
-    let selectQ = "SELECT * FROM user WHERE id = ?";
-    try {
-        connection.query(selectQ, [id], (err, result) => {
-            if (err) throw err;
-            let data = result[0];
-            // console.log(result)
-            res.render("edit.ejs", { data });
-        });
-    } catch (err) {
-        res.send(`Error DB: ${err}`);
-    }
-})
-/*
-// update route
-app.patch("/users/:id", (req, res) => {
-    let { id } = req.params;
-    // let q = `SELECT * FROM user WHERE id= `;
-    console.log(id);
-
-    let selectQ = "SELECT * FROM user WHERE id = ?";
-    connection.query(selectQ, [id], (err, result) => {
-         if (result.length === 0) {
-            return res.status(404).send("User not found");
-        }
-        res.send(result);
-
-    })
-    // try {
-
-    //     connection.query(q, (err, result) => {
-    //         if (err) throw err;
-    //         let data = result[0];
-    //         console.log(result);
-    //         res.send(data);
-
-    //         // res.render("edit.ejs", { data });
-    //     });
-    // } catch (err) {
-    //     res.send(`Error DB: ${err}`);
-    // }
-});
-*/
-// ...existing code...
-
-// filepath: /home/bhakare/Desktop/Web_Dev/Backend/SQLCLASS/index.js
-// ...existing code...
-// GET edit form route
-app.get("/users/:id/edit", (req, res) => {
-    let { id } = req.params;
-    let selectQ = "SELECT * FROM user WHERE id = ?";
-    
-    console.log("GET ID:", id);
-    
-    connection.query(selectQ, [id], (err, result) => {
+//  Route for show all users .->
+app.get("/users", (req, res) => {
+    let q = "SELECT * FROM user";
+    connection.query(q, (err, result) => {
         if (err) {
-            console.error("Database error:", err);
-            return res.status(500).send(`Error DB: ${err}`);
+            console.error("Error :", err);
+            return res.status(400).send("Database error");
         }
-        
         if (result.length === 0) {
-            return res.status(404).send("User not found");
+            return res.send("No user's found.........!");
         }
-        
+        let data = result;
+        res.render("show.ejs", { data });
+    });
+});
+
+
+//  Route for getting edit form ....->
+app.get("/users/:id/edit", (req, res) => {
+
+    let { id } = req.params;
+    let q = "SELECT * FROM user WHERE id = ?";
+    connection.query(q, [id], (err, result) => {
+        if (err) {
+            console.error("Database Error :", err);
+            return res.status(404).send("Database error");
+        }
         let data = result[0];
-        console.log("User found:", data);
+        console.log("---------------------------------------");
+        console.log(data);
         res.render("edit.ejs", { data });
     });
 });
 
-// // PATCH update user route
-// app.patch("/users/:id", (req, res) => {
-//     let { id } = req.params;
-//     let updates = req.body;
 
-//     console.log("PATCH ID:", id);
-//     console.log("Updates received:", updates);
+//  route for handiling edit request and update username in my database.....
+app.patch("/users/:id", (req, res) => {
+    let { id } = req.params;
+    let { username, password } = req.body;
+    console.log("new Data :", id, " -> ", username, " -> ", password);
+    let q = "SELECT * FROM user WHERE id = ?";
+    // let q = "UPDATE user SET username = ? WHERE id= ?";
 
-//     // Check if user exists
-//     let selectQ = "SELECT * FROM user WHERE id = ?";
-//     connection.query(selectQ, [id], (err, result) => {
-//         if (err) {
-//             console.error("Database error:", err);
-//             return res.status(500).send(`Error DB: ${err}`);
-//         }
+    connection.query(q, [id], (err, result) => {
+        if (err) {
+            console.error("Error in updating username :", err);
+            return res.status(500).send("Username not updated dut some error ");
+        }
+        let oldData = result[0];
+        console.log("oldData :", oldData);
+        if (oldData.password === password) {
+            console.log("oldData & new data has same password ");
+            let uquery = "UPDATE user SET username = ? WHERE id= ?";
+            let newData = [username, id];
+            connection.query(uquery, newData, (err, result) => {
+                if (err) {
+                    console.error("Error in updating username :", err);
+                    return res.status(500).send("Username not updated dut some error ");
+                }
+                console.log("User updated successfully .......!");
+            });
+        }
+        else {
+            // alert("Data not updated : Enter correct password");
+            console.log("Data not updates , Enter correct password : ");
+        }
+        res.redirect("/users");
+    })
+});
 
-//         if (result.length === 0) {
-//             console.log("No user found with id:", id);
-//             return res.status(404).send("User not found");
-//         }
 
-//         console.log("User found, proceeding with update");
+// Destroy route
+app.delete("/users/:id", (req, res) => {
+    let { id } = req.params;
+    res.send("user deleted successfully");
+});
 
-//         // Build dynamic update query based on provided fields
-//         let fields = [];
-//         let values = [];
 
-//         if (updates.username) {
-//             fields.push("username = ?");
-//             values.push(updates.username);
-//         }
-//         if (updates.email) {
-//             fields.push("email = ?");
-//             values.push(updates.email);
-//         }
-//         if (updates.password) {
-//             fields.push("password = ?");
-//             values.push(updates.password);
-//         }
 
-//         if (fields.length === 0) {
-//             return res.status(400).send("No fields to update");
-//         }
 
-//         // Execute UPDATE query
-//         let updateQ = `UPDATE user SET ${fields.join(", ")} WHERE id = ?`;
-//         values.push(id);
 
-//         connection.query(updateQ, values, (err, updateResult) => {
-//             if (err) {
-//                 console.error("Update error:", err);
-//                 return res.status(500).send(`Error DB: ${err}`);
-//             }
-//             console.log("User updated successfully");
-//             res.redirect("/users");
-//         });
-//     });
-// });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
