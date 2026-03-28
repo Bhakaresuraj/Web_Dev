@@ -24,6 +24,8 @@ const userSchema = new mongoose.Schema({
 const User = mongoose.model("User", userSchema);
 // const Employee=mongoose.model("Employee",userSchema);
 
+
+
 // let user1 = new User({ name: "adam", email: "adam123@gmail.com", age: 21 });
 // let user2 = new User({ name: "suraj", email: "suraj@gmail.com", age: 20 });
 // user1.save();
@@ -39,6 +41,8 @@ const User = mongoose.model("User", userSchema);
 // })
 
 
+
+// ---------------------------------------
 // for finding all the documents 
 // User.find().then((res) => {
 //     console.log(res);
@@ -58,6 +62,7 @@ const User = mongoose.model("User", userSchema);
 //     .catch((err) => { console.log(err); })
 
 
+// ------------------------------------
 //  Update in mongoose 
 
 // User.updateOne({ name: "adam" }, { name: "lala" }).then((res) => {
@@ -80,6 +85,7 @@ const User = mongoose.model("User", userSchema);
 // })
 
 
+// -----------------------------------------------
 // Delete in mongoose
 User.deleteOne({ name: "lala" }).then((res) => {
     console.log(res);
