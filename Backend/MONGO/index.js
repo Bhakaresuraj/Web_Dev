@@ -39,4 +39,23 @@ const User = mongoose.model("User", userSchema);
 // })
 
 
+// for finding all the documents 
+// User.find().then((res) => {
+//     console.log(res);
+// })
+//     .catch((err) => {
+//         console.log(err);
+//     });
+
+// User.find({ name: "Yash" }).then((res) => {
+//     console.log("Filtered data");
+//     console.log(res);
+// })
+//     .catch((err) => {
+//         console.log(err);
+//     })
+// User.find({ age: { $gt: 20 } }).then((res) => { console.log(res); })
+//     .catch((err) => { console.log(err); })
+
+
 
