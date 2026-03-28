@@ -58,4 +58,23 @@ const User = mongoose.model("User", userSchema);
 //     .catch((err) => { console.log(err); })
 
 
+//  Update in mongoose 
 
+User.updateOne({ name: "adam" }, { name: "lala" }).then((res) => {
+    console.log(res);
+}).catch((err) => {
+    console.log(err);
+})
+
+User.updateMany({ age: { $lt: 30 } }, { age: 21 }).then((res) => {
+    console.log(res);
+})
+    .catch((err) => {
+        console.log(err);
+    })
+
+User.findOneAndUpdate({ name: "suraj" }, { name: "Bhakare" }, { new: true }).then((res) => {
+    console.log(res);
+}).catch((err) => {
+    console.log(err);
+})
