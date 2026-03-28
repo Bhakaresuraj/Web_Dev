@@ -19,5 +19,24 @@ const userSchema = new mongoose.Schema({
     age: Number
 })
 
+// creating model class for constructing document .....
+
+const User = mongoose.model("User", userSchema);
+// const Employee=mongoose.model("Employee",userSchema);
+
+// let user1 = new User({ name: "adam", email: "adam123@gmail.com", age: 21 });
+// let user2 = new User({ name: "suraj", email: "suraj@gmail.com", age: 20 });
+// user1.save();
+// user2.save().then((res) => {
+//     console.log(res);
+// })
+//     .catch((err) => {
+//         console.log(err);
+//     })
+
+// User.insertMany([{ name: "sudarshan", age: 21, marks: 100 }, { name: "Sahil", age: 22, marks: 80 }, { name: "Yash", age: 20, marks: 98 }]).then((res) => {
+//     console.log(res);
+// })
+
 
 
