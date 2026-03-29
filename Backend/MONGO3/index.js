@@ -28,7 +28,20 @@ main().then(() => {
 app.listen(port, () => {
     console.log("app is listening. .....!");
 })
+
+// index route
 app.get("/", (req, res) => {
     res.send("Server is working fine...........!");
-})
+});
+
+// Route for displaying all the chats....
+app.get("/chats", async (req, res) => {
+    let data = await Chat.find();
+    console.log(data);
+    res.render("index.ejs", { data });
+});
+
+
+// Route for update chat....
+
 
