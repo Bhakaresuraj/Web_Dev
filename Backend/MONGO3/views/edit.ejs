@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit chat</title>
+</head>
+
+<body>
+    <h1>Edit chat </h1>
+    <form method="post" action="/chats/<%=data[0]._id%>?_method=PATCH">
+        <br>
+        <textarea cols="50" rows="10" name="message" id=""
+            placeholder="Enter message here(maxlen 50) :"><%=data[0].message%></textarea>
+
+        <br><br>
+        <button>Edit </button>
+    </form>
+</body>
+
+</html>

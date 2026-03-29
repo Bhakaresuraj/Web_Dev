@@ -12,6 +12,16 @@
         th {
             border: 1px solid black;
         }
+
+        .mess {
+            color: rgb(18, 24, 186);
+        }
+
+        a {
+            border: 2px solid black;
+            padding: 3px;
+            color: blue;
+        }
     </style>
 </head>
 
@@ -22,7 +32,10 @@
             <th>Message</th>
             <th>from</th>
             <th>to</th>
-            <th>Created_at</th>
+            <th>Date</th>
+            <th>Time</th>
+            <th></th>
+            <th></th>
         </tr>
 
 
@@ -31,21 +44,41 @@
                 <td>
                     <%=chat._id%>
                 </td>
-                <td>
+                <td class="mess">
                     <%=chat.message%>
                 </td>
                 <td>
-                    <%=chat.from%>
+                    <i>
+                        <%=chat.from%>
+                    </i>
                 </td>
                 <td>
-                    <%=chat.to%>
+                    <i>
+                        <%=chat.to%>
+                    </i>
                 </td>
                 <td>
-                    <%=chat.created_at%>
+                    <%=chat.created_at.toString().split(" ").slice(1,4).join("/")%>
                 </td>
+                <td>
+                    <%=chat.created_at.toString().split(" ")[4]%>
+                </td>
+                <td>
+                    <form method=" get" action="/chats/<%=chat._id%>/edit">
+                        <button>edit chat</button>
+                        </form>
+                </td>
+                <td>
+                    <form method="POST" action="/chats/<%=chat._id%>?_method=DELETE">
+                        <button>Delete</button>
+                    </form>
+                </td>
+
             </tr>
             <% } %>
     </table>
+    <br> <br>
+    <a href="/chats/new">New Post</a>
 </body>
 
 </html>
