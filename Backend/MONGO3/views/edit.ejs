@@ -9,10 +9,10 @@
 
 <body>
     <h1>Edit chat </h1>
-    <form method="post" action="/chats/<%=data[0]._id%>?_method=PATCH">
+    <form method="post" action="/chats/<%=data._id%>?_method=PATCH">
         <br>
         <textarea cols="50" rows="10" name="message" id=""
-            placeholder="Enter message here(maxlen 50) :"><%=data[0].message%></textarea>
+            placeholder="Enter message here(maxlen 50) :"><%=data.message%></textarea>
 
         <br><br>
         <button>Edit </button>
