@@ -49,6 +49,8 @@ app.get("/chats", async (req, res) => {
 
 // Route for create new  chat....
 
+
+
 app.get("/chats/new", (req, res) => {
     // throw new ExpressError(404, "Page not found");
     res.render("new.ejs");
@@ -132,6 +134,7 @@ function asyncWrap(fn) {
     }
 }
 
+
 app.get("/chats/:id", asyncWrap(async (req, res, next) => {
 
     // try {
@@ -147,6 +150,23 @@ app.get("/chats/:id", asyncWrap(async (req, res, next) => {
     //     next(err);
     // }
 }));
+
+function validationErrorHandler(err) {
+    // console.log("hELLO");
+    console.log(err.name);
+    console.log("This is validation error . Please enter all the information.....");
+    console.dir(err.message);
+    err.message="Enter All data in the above form .... And then continue........ ";
+    return err;
+}
+
+app.use((err, req, res, next) => {
+    //  console.log(err.name);
+    if (err.name === "ValidationError") {
+        err = validationErrorHandler(err);
+    }
+    next(err);
+})
 
 app.use((err, req, res, next) => {
     let { status = 500, message = "Error occured" } = err;
