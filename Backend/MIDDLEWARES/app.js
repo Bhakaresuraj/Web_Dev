@@ -1,7 +1,7 @@
 const express = require("express");
 const app = express();
 const port = 8080;
-
+const ExpressError = require("./ExpressError.js")
 
 /*
 // Simple middlewares.......
@@ -39,7 +39,7 @@ app.use("/api", (req, res, next) => {
     if (token === "giveaccess") {
         next();
     }
-    throw new Error("Access Denied..............!");
+    throw new ExpressError(401, "Access Denied..............!");
 
 });
 
@@ -48,24 +48,28 @@ app.get("/api", (req, res) => {
 })
 
 
+// Creating error for admin route
 
 
+app.get("/admin", (req, res) => {
+    throw new ExpressError(500, "Accessed Denied ......!");
+})
 
 // Error handling --------
 
-// app.get("/err", (req, res) => {
-//     abcd = absd;
+app.get("/err", (req, res) => {
+    abcd = absd;
 
-// });
-// app.use((err, req, res, next) => {
-//     console.log("--------ERROR-------------");
-//     next(err);
-//     // next();
-// });
+});
+app.use((err, req, res, next) => {
+    // console.log("--------ERROR-------------");
+    let { status = 500, message = "Something is going wrong" } = err;
+    res.status(status).send(message);
+});
 
 
 app.get("/", (req, res) => {
-    console.log("Hello , this is route ");
+    // console.log("Hello , this is route ");
     res.send("Server is working .......!");
 });
 
