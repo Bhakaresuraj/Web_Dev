@@ -3,13 +3,8 @@ const app = express();
 const port = 8080;
 
 
-
-app.listen(port, () => {
-    console.log("Server is working.....!");
-});
-
-
-
+/*
+// Simple middlewares.......
 app.use((req, res, next) => {
     console.log("Hi, I am  2nd middleware.");
     // res.send("Middleware finished...");
@@ -21,6 +16,53 @@ app.use((req, res, next) => {
     next();
 });
 
+*/
+
+/*
+// utility middleware---------------
+app.use((req, res, next) => {
+    req.time = new Date(Date.now()).toString()
+    console.log(req.method, req.hostname, req.path, req.time);
+    return next();
+});
+
+
+*/
+
+// app.get("/random",(req, res, next)=> {
+//     console.log("I am only for random.....");
+//     next();
+// });
+
+app.use("/api", (req, res, next) => {
+    let { token } = req.query;
+    if (token === "giveaccess") {
+        next();
+    }
+    throw new Error("Access Denied..............!");
+
+});
+
+app.get("/api", (req, res) => {
+    res.send("data");
+})
+
+
+
+
+
+// Error handling --------
+
+// app.get("/err", (req, res) => {
+//     abcd = absd;
+
+// });
+// app.use((err, req, res, next) => {
+//     console.log("--------ERROR-------------");
+//     next(err);
+//     // next();
+// });
+
 
 app.get("/", (req, res) => {
     console.log("Hello , this is route ");
@@ -28,6 +70,8 @@ app.get("/", (req, res) => {
 });
 
 
-
+app.listen(port, () => {
+    console.log("Server is working.....!");
+});
 
 
